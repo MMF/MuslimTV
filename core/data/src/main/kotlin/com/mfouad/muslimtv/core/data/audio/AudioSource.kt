@@ -5,6 +5,7 @@ import com.mfouad.muslimtv.core.model.AyahRef
 import com.mfouad.muslimtv.core.model.Reciter
 import dagger.hilt.android.qualifiers.ApplicationContext
 import java.io.File
+import java.util.Locale
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -19,7 +20,8 @@ class EveryAyahAudioSource @Inject constructor() : AudioSource {
 
     companion object {
         const val BASE = "https://everyayah.com/data"
-        fun fileName(ref: AyahRef): String = "%03d%03d.mp3".format(ref.surah, ref.ayah)
+        /** Always ASCII digits: with the device default locale an Arabic TV would ask for ٠٠١٠٠١.mp3. */
+        fun fileName(ref: AyahRef): String = String.format(Locale.ROOT, "%03d%03d.mp3", ref.surah, ref.ayah)
     }
 }
 
