@@ -4,6 +4,14 @@ Quran, azkar, prayer times and Islamic tools for the family TV.
 An Android TV / Google TV app made for the living room: the whole app is driven with the remote,
 works in **Arabic and English**, and keeps working **offline**.
 
+<div dir="rtl">
+
+القرآن الكريم والأذكار ومواقيت الصلاة وأدوات إسلامية لتلفاز العائلة.
+تطبيق لأجهزة Android TV و Google TV مصمَّم لغرفة المعيشة: يُستخدم بالكامل بجهاز التحكم عن بُعد،
+ويعمل **بالعربية والإنجليزية**، ويستمر في العمل **دون اتصال بالإنترنت**.
+
+</div>
+
 ![Home in Arabic](docs/screenshots/03-home-arabic.jpg)
 
 **[⬇ Download the APK](https://github.com/MMF/MuslimTV/raw/main/public/MuslimTV.apk)** · Downloader code **2206289** · [Install guide](#install-on-your-tv) ·
