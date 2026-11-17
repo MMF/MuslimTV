@@ -14,6 +14,9 @@ works in **Arabic and English**, and keeps working **offline**.
 
 ![Home in Arabic](docs/screenshots/03-home-arabic.jpg)
 
+▶️ **[Watch the 1-minute intro video on YouTube](https://www.youtube.com/watch?v=t7oSu_EJR7Y)** ·
+**[شاهد فيديو التعريف بالتطبيق (دقيقة واحدة)](https://www.youtube.com/watch?v=t7oSu_EJR7Y)**
+
 **[⬇ Download the APK](https://github.com/MMF/MuslimTV/raw/main/public/MuslimTV.apk)** · Downloader code **2206289** · [Install guide](#install-on-your-tv) ·
 [التثبيت بالعربية](#التثبيت-على-التلفاز) · [Wireless debugging](#install-from-a-computer-wireless-debugging)
 
