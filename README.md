@@ -6,7 +6,7 @@ works in **Arabic and English**, and keeps working **offline**.
 
 ![Home](docs/screenshots/02-home.jpg)
 
-**[⬇ Download the APK](public/MuslimTV.apk)** · [Install guide](#install-on-your-tv) ·
+**[⬇ Download the APK](https://github.com/MMF/MuslimTV/raw/main/public/MuslimTV.apk)** · [Install guide](#install-on-your-tv) ·
 [التثبيت بالعربية](#التثبيت-على-التلفاز) · [Wireless debugging](#install-from-a-computer-wireless-debugging)
 
 ---
@@ -61,10 +61,8 @@ Sony, TCL, Philips, Xiaomi, and Nvidia Shield.
 The app file: [`public/MuslimTV.apk`](public/MuslimTV.apk). Its direct download link is
 
 ```
-https://github.com/<github-user>/<repo-name>/raw/main/public/MuslimTV.apk
+https://github.com/MMF/MuslimTV/raw/main/public/MuslimTV.apk
 ```
-
-(replace `<github-user>/<repo-name>` with this repository's path).
 
 ### Option 1: with the Downloader app (no computer needed)
 
