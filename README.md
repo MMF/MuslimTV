@@ -4,7 +4,7 @@ Quran, azkar, prayer times and Islamic tools for the family TV.
 An Android TV / Google TV app made for the living room: the whole app is driven with the remote,
 works in **Arabic and English**, and keeps working **offline**.
 
-![Home](docs/screenshots/02-home.jpg)
+![Home in Arabic](docs/screenshots/03-home-arabic.jpg)
 
 **[⬇ Download the APK](https://github.com/MMF/MuslimTV/raw/main/public/MuslimTV.apk)** · [Install guide](#install-on-your-tv) ·
 [التثبيت بالعربية](#التثبيت-على-التلفاز) · [Wireless debugging](#install-from-a-computer-wireless-debugging)
@@ -46,7 +46,7 @@ works in **Arabic and English**, and keeps working **offline**.
 
 | | |
 |---|---|
-| ![Setup](docs/screenshots/01-setup.jpg) First-launch setup, 3 steps | ![Home in Arabic](docs/screenshots/03-home-arabic.jpg) Home in Arabic |
+| ![Setup](docs/screenshots/01-setup.jpg) First-launch setup, 3 steps | ![Home in English](docs/screenshots/02-home.jpg) Home in English |
 | ![Quran](docs/screenshots/04-quran.jpg) Quran: surahs, juz, bookmarks, memorize, khatmah | ![Reader](docs/screenshots/05-reader.jpg) Reader following the recitation |
 | ![Listening](docs/screenshots/06-listening.jpg) Full-screen listening | ![Nature mode](docs/screenshots/07-nature-mode.jpg) Nature mode |
 | ![Azkar](docs/screenshots/08-azkar.jpg) Azkar, with the one for now highlighted | ![Zikr](docs/screenshots/09-zikr.jpg) One zikr at a time; OK counts |
