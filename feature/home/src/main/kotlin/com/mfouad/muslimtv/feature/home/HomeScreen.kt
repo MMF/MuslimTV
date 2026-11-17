@@ -95,12 +95,13 @@ private fun HomeScreen(
         Row(Modifier.fillMaxWidth().weight(1f), horizontalArrangement = Arrangement.spacedBy(MtvSpacing.m)) {
             NextPrayerCard(state, now, f, onOpenPrayer, Modifier.weight(1.25f).fillMaxHeight().restorableFocus(focus, KEY_PRAYER))
             ContinueCard(state, f, { onContinueQuran(AyahRef(state.continueSurah?.number ?: 1, state.continueAyah)) }, Modifier.weight(1f).fillMaxHeight().restorableFocus(focus, KEY_CONTINUE))
-            state.khatmahPortion?.let { portion ->
-                KhatmahCard(state, portion, f, { onContinueQuran(portion.start) }, Modifier.weight(1f).fillMaxHeight().restorableFocus(focus, KEY_KHATMAH))
-            }
         }
         Row(Modifier.fillMaxWidth().weight(1f), horizontalArrangement = Arrangement.spacedBy(MtvSpacing.m)) {
-            AzkarCard(state.azkar, { onOpenAzkar(state.azkar) }, Modifier.weight(1f).fillMaxHeight().restorableFocus(focus, KEY_AZKAR))
+            AzkarCard(state.azkar, { onOpenAzkar(state.azkar) }, Modifier.weight(0.9f).fillMaxHeight().restorableFocus(focus, KEY_AZKAR))
+            // The khatmah card joins the bottom row only while a plan is active.
+            state.khatmahPortion?.let { portion ->
+                KhatmahCard(state, portion, f, { onContinueQuran(portion.start) }, Modifier.weight(0.85f).fillMaxHeight().restorableFocus(focus, KEY_KHATMAH))
+            }
             AyahCard(state, f, onOpenAyah, Modifier.weight(1.25f).fillMaxHeight().restorableFocus(focus, KEY_AYAH))
         }
     }
@@ -151,7 +152,7 @@ private fun Clock(now: State<Long>, f: TimeFormatter, zone: java.time.ZoneId) {
 private fun CardLabel(icon: ImageVector, text: String) {
     Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(10.dp)) {
         Icon(icon, null, Modifier.size(26.dp), tint = MtvTheme.colors.gold)
-        Text(text, style = MtvTheme.type.label, color = MtvTheme.colors.onBackgroundMuted, maxLines = 1)
+        Text(text, style = MtvTheme.type.label, color = MtvTheme.colors.onBackgroundMuted, maxLines = 1, overflow = TextOverflow.Ellipsis)
     }
 }
 
@@ -222,12 +223,7 @@ private fun AzkarCard(category: AzkarCategory, onClick: () -> Unit, modifier: Mo
         Column(Modifier.fillMaxSize(), verticalArrangement = Arrangement.SpaceBetween) {
             CardLabel(Icons.Rounded.AutoAwesome, stringResource(R.string.home_suggested_now))
             Column {
-                Text(stringResource(category.labelRes()), style = MtvTheme.type.title)
-                Spacer(Modifier.height(4.dp))
-                Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    Icon(Icons.Rounded.WbTwilight, null, Modifier.size(24.dp), tint = MtvTheme.colors.onBackgroundMuted)
-                    Text(stringResource(R.string.home_azkar_open), style = MtvTheme.type.body, color = MtvTheme.colors.onBackgroundMuted)
-                }
+                Text(stringResource(category.labelRes()), style = MtvTheme.type.title.copy(fontSize = 26.sp), maxLines = 1, overflow = TextOverflow.Ellipsis)
             }
         }
     }
@@ -288,9 +284,10 @@ private fun KhatmahCard(state: HomeUiState, portion: com.mfouad.muslimtv.core.mo
     val plan = state.khatmah ?: return
     FocusCard(onClick = onClick, modifier = modifier, contentPadding = MtvSpacing.m) {
         Column(Modifier.fillMaxSize(), verticalArrangement = Arrangement.SpaceBetween) {
-            CardLabel(Icons.Rounded.AutoStories, stringResource(R.string.khatmah_card, f.number(plan.completed + 1), f.number(plan.days)))
-            Column {
-                Text(stringResource(R.string.khatmah_pages, f.number(portion.pages.first), f.number(portion.pages.last)), style = MtvTheme.type.title, maxLines = 1)
+            CardLabel(Icons.Rounded.AutoStories, stringResource(R.string.khatmah_label))
+            Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                Text(stringResource(R.string.khatmah_day, f.number(plan.completed + 1), f.number(plan.days)), style = MtvTheme.type.title.copy(fontSize = 26.sp), maxLines = 1, softWrap = false)
+                Text(stringResource(R.string.khatmah_pages, f.number(portion.pages.first), f.number(portion.pages.last)), style = MtvTheme.type.caption, color = MtvTheme.colors.onBackgroundMuted, maxLines = 1)
                 androidx.compose.foundation.layout.Box(Modifier.fillMaxWidth().height(8.dp).background(MtvTheme.colors.surfaceFocused, com.mfouad.muslimtv.core.designsystem.theme.MtvShapes.pill)) {
                     androidx.compose.foundation.layout.Box(Modifier.fillMaxHeight().fillMaxWidth(plan.progress).background(MtvTheme.colors.gold, com.mfouad.muslimtv.core.designsystem.theme.MtvShapes.pill))
                 }

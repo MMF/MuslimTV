@@ -20,4 +20,6 @@
     <string name="suhoor_ends">نهاية السحور</string>
     <string name="khatmah_card">الختمة · اليوم %1$s من %2$s</string>
     <string name="khatmah_pages">الصفحات %1$s–%2$s</string>
+    <string name="khatmah_label">الختمة</string>
+    <string name="khatmah_day">اليوم %1$s / %2$s</string>
 </resources>

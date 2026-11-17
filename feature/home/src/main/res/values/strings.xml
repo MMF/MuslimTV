@@ -20,4 +20,6 @@
     <string name="suhoor_ends">Suhoor ends</string>
     <string name="khatmah_card">Khatmah · day %1$s of %2$s</string>
     <string name="khatmah_pages">Pages %1$s–%2$s</string>
+    <string name="khatmah_label">Khatmah</string>
+    <string name="khatmah_day">Day %1$s / %2$s</string>
 </resources>

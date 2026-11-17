@@ -121,4 +121,6 @@
     <string name="kh_done">تم الورد</string>
     <string name="kh_stop">إيقاف الخطة</string>
     <string name="kh_finished">تمت الختمة، تقبّل الله منك.</string>
+    <string name="kh_stop_confirm">إيقاف هذه الختمة؟ سيُمسح تقدّمها.</string>
+    <string name="kh_keep">الإبقاء عليها</string>
 </resources>

@@ -92,6 +92,7 @@ fun KhatmahTab(focus: FocusRestoreState, onRead: (AyahRef) -> Unit, viewModel: K
                 MtvButton(stringResource(R.string.kh_start), { viewModel.start(days) }, Modifier.restorableFocus(focus, "kh_start"))
             }
         } else {
+            var confirmStop by rememberSaveable { androidx.compose.runtime.mutableStateOf(false) }
             val portion = viewModel.today(p)
             Text(stringResource(R.string.kh_day, f.number(p.completed + 1), f.number(p.days)), style = MtvTheme.type.headline)
             Text(portionText(portion) { viewModel.surah(it) }, style = MtvTheme.type.title, color = c.goldSoft)
@@ -104,7 +105,17 @@ fun KhatmahTab(focus: FocusRestoreState, onRead: (AyahRef) -> Unit, viewModel: K
             Row(horizontalArrangement = Arrangement.spacedBy(MtvSpacing.m)) {
                 MtvButton(stringResource(R.string.kh_read), { onRead(portion.start) }, Modifier.restorableFocus(focus, "kh_read"), icon = Icons.AutoMirrored.Rounded.MenuBook)
                 MtvButton(stringResource(R.string.kh_done), viewModel::done, Modifier.restorableFocus(focus, "kh_done"), style = ButtonStyle.Secondary, icon = Icons.Rounded.Check)
-                MtvButton(stringResource(R.string.kh_stop), viewModel::stop, Modifier.restorableFocus(focus, "kh_stop"), style = ButtonStyle.Secondary)
+                MtvButton(stringResource(R.string.kh_stop), { confirmStop = true }, Modifier.restorableFocus(focus, "kh_stop"), style = ButtonStyle.Secondary)
+            }
+            if (confirmStop) {
+                com.mfouad.muslimtv.core.designsystem.component.ConfirmDialog(
+                    title = stringResource(R.string.kh_stop),
+                    message = stringResource(R.string.kh_stop_confirm),
+                    confirmLabel = stringResource(R.string.kh_stop),
+                    dismissLabel = stringResource(R.string.kh_keep),
+                    onConfirm = { confirmStop = false; viewModel.stop() },
+                    onDismiss = { confirmStop = false },
+                )
             }
         }
     }

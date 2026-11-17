@@ -145,7 +145,8 @@ fun AzkarHomeEntry(
             }
         }
     }
-    RestoreFocusEffect(focus, suggested?.name ?: AzkarCategory.MORNING.name)
+    // Wait for the suggestion so first focus lands on the azkar that fit the time of day.
+    RestoreFocusEffect(focus, suggested?.name, enabled = suggested != null)
 }
 
 @Composable
@@ -367,11 +368,11 @@ fun AsmaEntry(viewModel: AzkarHomeViewModel = hiltViewModel()) {
             contentPadding = PaddingValues(8.dp),
         ) {
             items(names, key = { it.number }) { n ->
-                FocusCard(onClick = { open = n.number }, modifier = Modifier.height(150.dp).restorableFocus(focus, "n${n.number}"), contentPadding = MtvSpacing.s) {
+                FocusCard(onClick = { open = n.number }, modifier = Modifier.height(164.dp).restorableFocus(focus, "n${n.number}"), contentPadding = MtvSpacing.s) {
                     Column(Modifier.fillMaxSize(), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.SpaceEvenly) {
-                        QuranText(n.arabic, sizeSp = 34, lineHeightEm = 1.4f, color = MtvTheme.colors.goldSoft)
+                        QuranText(n.arabic, sizeSp = 30, lineHeightEm = 1.3f, color = MtvTheme.colors.goldSoft)
                         Text(n.transliteration, style = MtvTheme.type.bodyStrong, maxLines = 1)
-                        if (!arabic) Text(n.english, style = MtvTheme.type.caption, color = MtvTheme.colors.onBackgroundMuted, maxLines = 1, textAlign = TextAlign.Center)
+                        if (!arabic) Text(n.english, style = MtvTheme.type.caption, color = MtvTheme.colors.onBackgroundMuted, maxLines = 1, overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis, textAlign = TextAlign.Center)
                         else Text(f.number(n.number), style = MtvTheme.type.caption, color = MtvTheme.colors.onBackgroundMuted)
                     }
                 }

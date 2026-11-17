@@ -121,4 +121,6 @@
     <string name="kh_done">Mark as done</string>
     <string name="kh_stop">Stop the plan</string>
     <string name="kh_finished">Khatmah complete. May Allah accept it.</string>
+    <string name="kh_stop_confirm">Stop this khatmah? Its progress will be cleared.</string>
+    <string name="kh_keep">Keep it</string>
 </resources>

@@ -108,12 +108,13 @@ fun ToolsHomeEntry(
     )
     Column(Modifier.fillMaxSize(), verticalArrangement = Arrangement.spacedBy(MtvSpacing.m)) {
         ScreenHeader(stringResource(R.string.tools_title))
-        LazyVerticalGrid(GridCells.Fixed(3), verticalArrangement = Arrangement.spacedBy(MtvSpacing.m), horizontalArrangement = Arrangement.spacedBy(MtvSpacing.m), contentPadding = PaddingValues(8.dp)) {
+        // Compact tiles so all seven tools fit on one screen without scrolling.
+        LazyVerticalGrid(GridCells.Fixed(3), verticalArrangement = Arrangement.spacedBy(MtvSpacing.s), horizontalArrangement = Arrangement.spacedBy(MtvSpacing.m), contentPadding = PaddingValues(8.dp)) {
             items(tiles, key = { it.key }) { t ->
-                FocusCard(onClick = t.onClick, modifier = Modifier.height(140.dp).restorableFocus(focus, t.key), contentPadding = MtvSpacing.m) {
+                FocusCard(onClick = t.onClick, modifier = Modifier.height(118.dp).restorableFocus(focus, t.key), contentPadding = MtvSpacing.s) {
                     Column(Modifier.fillMaxSize(), verticalArrangement = Arrangement.SpaceBetween) {
-                        Icon(t.icon, null, Modifier.size(34.dp), tint = MtvTheme.colors.gold)
-                        Text(stringResource(t.title), style = MtvTheme.type.title.copy(fontSize = 26.sp, lineHeight = 32.sp), maxLines = 2)
+                        Icon(t.icon, null, Modifier.size(28.dp), tint = MtvTheme.colors.gold)
+                        Text(stringResource(t.title), style = MtvTheme.type.title.copy(fontSize = 24.sp, lineHeight = 28.sp), maxLines = 2)
                     }
                 }
             }

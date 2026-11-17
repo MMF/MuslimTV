@@ -81,14 +81,16 @@ fun PrayerTodayEntry(onOpenSettings: () -> Unit, onMonth: () -> Unit, onAdhan: (
                     ),
                     style = MtvTheme.type.caption,
                     color = MtvTheme.colors.onBackgroundMuted,
+                    maxLines = 1,
+                    overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis,
                 )
-                Spacer(Modifier.height(MtvSpacing.l))
+                Spacer(Modifier.height(MtvSpacing.m))
                 MtvButton(stringResource(R.string.month_title), onMonth, Modifier.restorableFocus(focus, "month"), icon = Icons.Rounded.CalendarMonth)
-                Spacer(Modifier.height(MtvSpacing.s))
-                Row(horizontalArrangement = Arrangement.spacedBy(MtvSpacing.s)) {
-                    MtvButton(stringResource(R.string.adhan_settings), onAdhan, Modifier.restorableFocus(focus, "adhan"), style = com.mfouad.muslimtv.core.designsystem.component.ButtonStyle.Secondary, icon = Icons.Rounded.NotificationsActive)
-                    MtvButton(stringResource(R.string.prayer_adjust), onOpenSettings, Modifier.restorableFocus(focus, "settings"), style = com.mfouad.muslimtv.core.designsystem.component.ButtonStyle.Secondary, icon = Icons.Rounded.Tune)
-                }
+                // Stacked: side by side they do not fit next to the timetable.
+                Spacer(Modifier.height(MtvSpacing.xs))
+                MtvButton(stringResource(R.string.adhan_settings), onAdhan, Modifier.restorableFocus(focus, "adhan"), style = com.mfouad.muslimtv.core.designsystem.component.ButtonStyle.Secondary, icon = Icons.Rounded.NotificationsActive)
+                Spacer(Modifier.height(MtvSpacing.xs))
+                MtvButton(stringResource(R.string.prayer_adjust), onOpenSettings, Modifier.restorableFocus(focus, "settings"), style = com.mfouad.muslimtv.core.designsystem.component.ButtonStyle.Secondary, icon = Icons.Rounded.Tune)
             }
             Column(Modifier.weight(1.1f).fillMaxHeight(), verticalArrangement = Arrangement.spacedBy(6.dp, Alignment.CenterVertically)) {
                 Prayer.entries.forEach { p ->
