@@ -37,7 +37,7 @@ data class UserSettings(
         const val MAX_QURAN_FONT_SP = 72
         const val QURAN_FONT_STEP_SP = 4
         const val MAX_HIJRI_OFFSET = 2
-        const val DEFAULT_RECITER = "alafasy"
+        const val DEFAULT_RECITER = "minshawi"
         const val DEFAULT_TRANSLATION = "en.pickthall"
     }
 }

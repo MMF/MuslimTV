@@ -1,5 +1,11 @@
 package com.mfouad.muslimtv.feature.azkar
 
+import androidx.compose.material.icons.rounded.KeyboardArrowDown
+import androidx.compose.foundation.layout.wrapContentHeight
+import androidx.compose.foundation.layout.heightIn
+import androidx.compose.foundation.gestures.animateScrollBy
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.BorderStroke
@@ -185,6 +191,8 @@ fun ZikrEntry(onBack: () -> Unit, viewModel: ZikrViewModel = hiltViewModel()) {
     val card = remember { FocusRequester() }
     val pulse = remember { Animatable(1f) }
     val rtl = LocalLayoutDirection.current == LayoutDirection.Rtl
+    val scroll = rememberScrollState()
+    LaunchedEffect(index) { scroll.scrollTo(0) }
 
     if (finished) {
         CompletedPanel(onAgain = viewModel::restart, onBack = onBack)
@@ -221,27 +229,16 @@ fun ZikrEntry(onBack: () -> Unit, viewModel: ZikrViewModel = hiltViewModel()) {
                     when (e.key) {
                         forward -> { viewModel.go(1); true }
                         backward -> { viewModel.go(-1); true }
+                        Key.DirectionDown -> { scope.launch { scroll.animateScrollBy(220f) }; scroll.canScrollForward }
+                        Key.DirectionUp -> { scope.launch { scroll.animateScrollBy(-220f) }; scroll.canScrollBackward }
                         else -> false
                     }
                 },
         ) {
             Column(Modifier.fillMaxSize(), verticalArrangement = Arrangement.spacedBy(MtvSpacing.s)) {
-                // Arabic dhikr text, never cut: it shrinks to fit the card instead.
-                Box(Modifier.weight(1f).fillMaxWidth(), contentAlignment = Alignment.Center) {
-                BasicText(
-                    text = zikr.text,
-                    style = MtvTheme.type.headline.copy(
-                        fontFamily = NaskhFamily,
-                        color = MtvTheme.colors.onBackground,
-                        textAlign = TextAlign.Center,
-                        textDirection = TextDirection.Rtl,
-                        // Relative line height, so it shrinks together with auto-sized text.
-                        lineHeight = 1.6.em,
-                    ),
-                    autoSize = TextAutoSize.StepBased(minFontSize = 14.sp, maxFontSize = 38.sp, stepSize = 1.sp),
-                    modifier = Modifier.fillMaxWidth(),
-                )
-                }
+                // Arabic dhikr text: the largest size that fits, never below a readable minimum.
+                // Longer azkar scroll with Up/Down instead of being cut off.
+                ZikrText(zikr.text, scroll, Modifier.weight(1f).fillMaxWidth())
                 Text(
                     stringResource(R.string.zikr_source, zikr.reference),
                     style = MtvTheme.type.caption.copy(fontFamily = NaskhFamily),
@@ -264,6 +261,41 @@ fun ZikrEntry(onBack: () -> Unit, viewModel: ZikrViewModel = hiltViewModel()) {
     }
     LaunchedEffect(index) { card.requestFocusSafely() }
 }
+
+@Composable
+private fun ZikrText(text: String, scroll: androidx.compose.foundation.ScrollState, modifier: Modifier) {
+    val measurer = androidx.compose.ui.text.rememberTextMeasurer()
+    val base = MtvTheme.type.headline.copy(
+        fontFamily = NaskhFamily,
+        color = MtvTheme.colors.onBackground,
+        textAlign = TextAlign.Center,
+        textDirection = TextDirection.Rtl,
+        lineHeight = 1.6.em,
+    )
+    androidx.compose.foundation.layout.BoxWithConstraints(modifier) {
+        val width = constraints.maxWidth
+        val height = constraints.maxHeight
+        // Largest size from 38sp down to 24sp whose text fits the card's height.
+        val size = remember(text, width, height) {
+            (38 downTo ZIKR_MIN_SP).firstOrNull { sp ->
+                measurer.measure(text, base.copy(fontSize = sp.sp), constraints = androidx.compose.ui.unit.Constraints(maxWidth = width)).size.height <= height
+            } ?: ZIKR_MIN_SP
+        }
+        Box(Modifier.fillMaxSize().verticalScroll(scroll), contentAlignment = Alignment.Center) {
+            Text(text, style = base.copy(fontSize = size.sp), modifier = Modifier.fillMaxWidth().heightIn(min = with(androidx.compose.ui.platform.LocalDensity.current) { height.toDp() }).wrapContentHeight(Alignment.CenterVertically))
+        }
+        if (scroll.canScrollForward) {
+            Icon(
+                androidx.compose.material.icons.Icons.Rounded.KeyboardArrowDown,
+                contentDescription = null,
+                tint = MtvTheme.colors.gold,
+                modifier = Modifier.align(Alignment.BottomCenter).size(36.dp),
+            )
+        }
+    }
+}
+
+private const val ZIKR_MIN_SP = 24
 
 @Composable
 private fun CountDots(done: Int, total: Int) {
