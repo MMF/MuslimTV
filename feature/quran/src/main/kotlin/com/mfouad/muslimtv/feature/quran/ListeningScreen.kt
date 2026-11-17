@@ -132,7 +132,13 @@ fun ListeningEntry(
                 IconButton(Icons.AutoMirrored.Rounded.ArrowBack, stringResource(R.string.ctl_next_ayah), { viewModel.player.nextAyah() }, Modifier.restorableFocus(focus, "na"))
                 IconButton(Icons.Rounded.SkipNext, stringResource(R.string.ctl_next_surah), { viewModel.player.nextSurah() }, Modifier.restorableFocus(focus, "ns"))
             }
-            Row(horizontalArrangement = Arrangement.spacedBy(MtvSpacing.s), verticalAlignment = Alignment.CenterVertically, modifier = Modifier.padding(top = MtvSpacing.s)) {
+            // Flows onto a second line when the labels (longer in Arabic) don't fit in one row.
+            @OptIn(androidx.compose.foundation.layout.ExperimentalLayoutApi::class)
+            androidx.compose.foundation.layout.FlowRow(
+                horizontalArrangement = Arrangement.spacedBy(MtvSpacing.s, Alignment.CenterHorizontally),
+                verticalArrangement = Arrangement.spacedBy(MtvSpacing.s),
+                modifier = Modifier.padding(top = MtvSpacing.s),
+            ) {
                 MtvButton(
                     stringResource(R.string.ctl_speed, state.speed.toString().removeSuffix(".0")),
                     viewModel::cycleSpeed, Modifier.restorableFocus(focus, "speed"), style = ButtonStyle.Secondary, icon = Icons.Rounded.Speed,

@@ -60,7 +60,8 @@ fun MtvButton(
             verticalAlignment = Alignment.CenterVertically,
         ) {
             if (icon != null) Icon(icon, contentDescription = null, modifier = Modifier.size(28.dp))
-            Text(text, style = MtvTheme.type.label)
+            // Button labels never wrap; a wrapped label reads as several broken words on a TV.
+            Text(text, style = MtvTheme.type.label, maxLines = 1, softWrap = false)
         }
     }
 }
