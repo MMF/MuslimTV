@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="azkar_title">Azkar</string>
+    <string name="occasions">Duas for occasions</string>
+    <string name="tasbeeh">Tasbeeh</string>
+    <string name="asma">Asma ul-Husna</string>
+    <string name="ruqyah">Ruqyah</string>
+    <string name="ruqyah_hint">Ayahs commonly recited for ruqyah, played with your reciter.</string>
+    <string name="play_all">Play all</string>
+    <string name="zikr_progress">%1$s of %2$s</string>
+    <string name="zikr_count">Say %1$s times</string>
+    <string name="zikr_count_once">Say once</string>
+    <string name="zikr_counter">%1$s / %2$s</string>
+    <string name="zikr_press_ok">Press OK after each one</string>
+    <string name="zikr_source">Source: %1$s</string>
+    <string name="completed_title">Completed</string>
+    <string name="completed_body">May Allah accept from you.</string>
+    <string name="again">Start again</string>
+    <string name="back">Back</string>
+    <string name="target">Target</string>
+    <string name="target_free">No limit</string>
+    <string name="reset">Reset</string>
+    <string name="rounds">Rounds: %1$s</string>
+    <string name="tasbeeh_hint">Press OK to count</string>
+    <string name="tasbeeh_done">%1$s done</string>
+    <string name="items_count">%1$s azkar</string>
+    <string name="suggested">Suggested now</string>
+    <string name="ruqyah_offline">You are offline, and these ayahs are not downloaded for your reciter.</string>
+    <string name="go_downloads">Go to downloads</string>
+    <string name="suggested_short">Now</string>
+</resources>

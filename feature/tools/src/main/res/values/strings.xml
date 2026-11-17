@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tools_title">Tools</string>
+    <string name="t_calendar">Hijri calendar</string>
+    <string name="t_qibla">Qibla</string>
+    <string name="t_hadith">Hadith of the day</string>
+    <string name="t_nawawi">Forty Hadith of an-Nawawi</string>
+    <string name="t_live">Live and radio</string>
+    <string name="t_kids">Kids\' corner</string>
+    <string name="t_hajj">Hajj and Umrah</string>
+    <string name="offline_disabled">Needs internet. Connect the TV to watch or listen.</string>
+
+    <string name="cal_prev">Previous month</string>
+    <string name="cal_next">Next month</string>
+    <string name="cal_today">Today</string>
+    <string name="cal_fast">Recommended fasting</string>
+    <string name="cal_no_fast">No fasting</string>
+    <string name="cal_ramadan">Ramadan</string>
+    <string name="cal_occasions">This month</string>
+    <string name="cal_none">No special occasions this month. Fasting is recommended on Mondays, Thursdays and the 13th–15th.</string>
+    <string name="occ_new_year">Islamic New Year</string>
+    <string name="occ_ashura">Ashura</string>
+    <string name="occ_ramadan">Start of Ramadan</string>
+    <string name="occ_last_ten">Last ten nights of Ramadan</string>
+    <string name="occ_eid_fitr">Eid al-Fitr</string>
+    <string name="occ_dhul_hijjah">First ten days of Dhul-Hijjah</string>
+    <string name="occ_arafah">Day of Arafah</string>
+    <string name="occ_eid_adha">Eid al-Adha</string>
+    <string name="occ_tashreeq">Days of Tashreeq</string>
+
+    <string name="qibla_bearing">%1$s° from true north</string>
+    <string name="qibla_point">Towards the %1$s</string>
+    <string name="qibla_distance">%1$s km to the Kaaba</string>
+    <string name="qibla_hint">A TV has no compass. Use a known direction: the sun rises in the east and sets in the west.</string>
+    <string name="qibla_from">From %1$s</string>
+
+    <string name="hadith_number">%1$s · %2$s</string>
+    <string name="hadith_open_nawawi">Forty Hadith of an-Nawawi</string>
+    <string name="nawawi_count">Hadith %1$s of %2$s</string>
+
+    <string name="live_section">Live from the Two Holy Mosques</string>
+    <string name="radio_section">Quran radio</string>
+    <string name="live_error">The stream could not be played. It may be offline right now.</string>
+    <string name="retry">Retry</string>
+
+    <string name="kids_wudu">Wudu</string>
+    <string name="kids_prayer">Prayer</string>
+    <string name="kids_duas">Short duas</string>
+    <string name="step_of">Step %1$s of %2$s</string>
+    <string name="next">Next</string>
+
+    <string name="hajj_umrah">Umrah</string>
+    <string name="hajj_hajj">Hajj</string>
+    <string name="hajj_duas">Duas</string>
+    <string name="guide_note">A short guide. For details and special cases, ask a trusted scholar.</string>
+
+    <string-array name="wudu_steps">
+        <item>Make the intention in your heart and say “Bismillah”.</item>
+        <item>Wash both hands up to the wrists, three times.</item>
+        <item>Rinse the mouth, three times.</item>
+        <item>Breathe water gently into the nose and blow it out, three times.</item>
+        <item>Wash the whole face, three times.</item>
+        <item>Wash the right arm up to the elbow, then the left, three times each.</item>
+        <item>Wipe the head with wet hands, from front to back and back again, once.</item>
+        <item>Wipe the ears, inside and behind, once.</item>
+        <item>Wash the right foot up to the ankle, then the left, three times each.</item>
+        <item>Say the dua after wudu: “Ash-hadu an la ilaha illallah…”.</item>
+    </string-array>
+    <string-array name="prayer_steps">
+        <item>Make wudu, face the qibla and make the intention in your heart.</item>
+        <item>Raise your hands and say “Allahu Akbar”.</item>
+        <item>Recite Al-Fatiha, then a short surah.</item>
+        <item>Bow (ruku) and say “Subhana Rabbiyal Adheem” three times.</item>
+        <item>Stand up saying “Sami’allahu liman hamidah, Rabbana wa lakal hamd”.</item>
+        <item>Prostrate (sujud) and say “Subhana Rabbiyal A’la” three times.</item>
+        <item>Sit up and say “Rabbighfir li”, then prostrate a second time.</item>
+        <item>Stand for the next rak’ah and repeat.</item>
+        <item>In the last sitting, recite the tashahhud and the salawat on the Prophet ﷺ.</item>
+        <item>Turn your head to the right, then to the left, saying “As-salamu alaykum wa rahmatullah”.</item>
+    </string-array>
+    <string-array name="umrah_steps">
+        <item>Ihram: at the miqat, wear the ihram clothes, make the intention for Umrah and start the talbiyah.</item>
+        <item>Tawaf: walk around the Kaaba seven times, starting and ending at the Black Stone, keeping the Kaaba on your left.</item>
+        <item>Pray two rak’ahs behind Maqam Ibrahim if possible, or anywhere in the mosque.</item>
+        <item>Drink Zamzam water.</item>
+        <item>Sa’i: walk seven times between Safa and Marwah, starting at Safa and ending at Marwah.</item>
+        <item>Shave the head or shorten the hair (women cut a fingertip’s length). Your Umrah is complete.</item>
+    </string-array>
+    <string-array name="hajj_steps">
+        <item>8 Dhul-Hijjah: enter ihram (for Hajj at-Tamattu’ from your place in Makkah) and go to Mina.</item>
+        <item>9 Dhul-Hijjah: stand at Arafah from after noon until sunset, in dhikr and dua.</item>
+        <item>Night of the 10th: go to Muzdalifah, pray Maghrib and Isha there, and spend the night.</item>
+        <item>10 Dhul-Hijjah: stone Jamrat al-Aqabah with seven pebbles, offer the sacrifice, and shave or shorten the hair.</item>
+        <item>Perform Tawaf al-Ifadah and the Sa’i of Hajj.</item>
+        <item>11–13 Dhul-Hijjah: stay in Mina and stone the three Jamarat each day after noon (you may leave after the 12th).</item>
+        <item>Before leaving Makkah, perform the farewell tawaf.</item>
+    </string-array>
+</resources>

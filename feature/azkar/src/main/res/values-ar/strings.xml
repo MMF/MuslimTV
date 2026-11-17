@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="azkar_title">الأذكار</string>
+    <string name="occasions">أدعية المناسبات</string>
+    <string name="tasbeeh">المسبحة</string>
+    <string name="asma">أسماء الله الحسنى</string>
+    <string name="ruqyah">الرقية الشرعية</string>
+    <string name="ruqyah_hint">آيات الرقية الشرعية بصوت القارئ الذي اخترته.</string>
+    <string name="play_all">تشغيل الكل</string>
+    <string name="zikr_progress">%1$s من %2$s</string>
+    <string name="zikr_count">تُقال %1$s مرات</string>
+    <string name="zikr_count_once">تُقال مرة واحدة</string>
+    <string name="zikr_counter">%1$s / %2$s</string>
+    <string name="zikr_press_ok">اضغط OK بعد كل مرة</string>
+    <string name="zikr_source">المصدر: %1$s</string>
+    <string name="completed_title">تمّت الأذكار</string>
+    <string name="completed_body">تقبّل الله منك.</string>
+    <string name="again">البدء من جديد</string>
+    <string name="back">رجوع</string>
+    <string name="target">العدد</string>
+    <string name="target_free">بلا حد</string>
+    <string name="reset">تصفير</string>
+    <string name="rounds">الدورات: %1$s</string>
+    <string name="tasbeeh_hint">اضغط OK للتسبيح</string>
+    <string name="tasbeeh_done">اكتملت %1$s</string>
+    <string name="items_count">%1$s ذكرًا</string>
+    <string name="suggested">مقترح الآن</string>
+    <string name="ruqyah_offline">أنت غير متصل، وهذه الآيات غير محمّلة بصوت القارئ.</string>
+    <string name="go_downloads">الذهاب إلى التنزيلات</string>
+    <string name="suggested_short">الآن</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onb_welcome">Welcome to Muslim TV</string>
+    <string name="onb_welcome_body">Quran, azkar and prayer times for the whole family. Three quick steps and you are ready.</string>
+    <string name="onb_step">Step %1$s of %2$s</string>
+    <string name="onb_language_title">Choose your language</string>
+    <string name="onb_language_body">You can change it later in Settings.</string>
+    <string name="onb_city_title">Where are you?</string>
+    <string name="onb_city_body">Prayer times are calculated on this TV for your city. No location access is needed.</string>
+    <string name="onb_method_title">Prayer calculation method</string>
+    <string name="onb_method_body">Pick the method used by your local mosque. The recommended one suits %1$s.</string>
+    <string name="onb_method_note">Asr time: %1$s. You can change this and fine-tune each prayer in Settings.</string>
+</resources>

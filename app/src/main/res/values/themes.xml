@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mtv_background">#0B1512</color>
+    <color name="mtv_gold">#D4AF61</color>
+    <style name="Theme.MuslimTV" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/window_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:colorBackground">@color/mtv_background</item>
+        <item name="colorAccent">@color/mtv_gold</item>
+        <item name="android:statusBarColor">@color/mtv_background</item>
+        <item name="android:navigationBarColor">@color/mtv_background</item>
+    </style>
+</resources>

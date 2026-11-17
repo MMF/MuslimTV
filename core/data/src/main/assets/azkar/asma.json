@@ -1,0 +1,698 @@
+{
+ "source": "teamsazen/99-Names (MIT)",
+ "names": [
+  {
+   "number": 1,
+   "arabic": "ٱلرَّحْمَٰنُ",
+   "transliteration": "Ar-Rahman",
+   "english": "The Most Gracious",
+   "explanation": "His mercy is vast and reaches every creature in this world, believer and disbeliever alike."
+  },
+  {
+   "number": 2,
+   "arabic": "ٱلرَّحِيمُ",
+   "transliteration": "Ar-Raheem",
+   "english": "The Most Merciful",
+   "explanation": "He shows special, lasting mercy to those who believe, above all in the Hereafter."
+  },
+  {
+   "number": 3,
+   "arabic": "ٱلْمَلِكُ",
+   "transliteration": "Al-Malik",
+   "english": "The King",
+   "explanation": "The true Sovereign of all that exists, whose rule needs no one and never ends."
+  },
+  {
+   "number": 4,
+   "arabic": "ٱلْقُدُّوسُ",
+   "transliteration": "Al-Quddus",
+   "english": "The Most Holy",
+   "explanation": "Free of every flaw, need and imperfection, far above anything unworthy of Him."
+  },
+  {
+   "number": 5,
+   "arabic": "ٱلسَّلَامُ",
+   "transliteration": "As-Salam",
+   "english": "The Source of Peace",
+   "explanation": "Perfect and free of all defect, He is the source of peace and safety for His creation."
+  },
+  {
+   "number": 6,
+   "arabic": "ٱلْمُؤْمِنُ",
+   "transliteration": "Al-Mu'min",
+   "english": "The Giver of Security",
+   "explanation": "He grants safety and faith, and confirms the truth of His word and His messengers."
+  },
+  {
+   "number": 7,
+   "arabic": "ٱلْمُهَيْمِنُ",
+   "transliteration": "Al-Muhaymin",
+   "english": "The Guardian",
+   "explanation": "He watches over and protects all things, and nothing escapes His care."
+  },
+  {
+   "number": 8,
+   "arabic": "ٱلْعَزِيزُ",
+   "transliteration": "Al-Aziz",
+   "english": "The Almighty",
+   "explanation": "Mighty and honoured, He is never overcome and none can resist His will."
+  },
+  {
+   "number": 9,
+   "arabic": "ٱلْجَبَّارُ",
+   "transliteration": "Al-Jabbar",
+   "english": "The Compeller",
+   "explanation": "He sets right what is broken and brings all things under His will."
+  },
+  {
+   "number": 10,
+   "arabic": "ٱلْمُتَكَبِّرُ",
+   "transliteration": "Al-Mutakabbir",
+   "english": "The Supreme in Greatness",
+   "explanation": "All true greatness belongs to Him alone, above everything He has created."
+  },
+  {
+   "number": 11,
+   "arabic": "ٱلْخَالِقُ",
+   "transliteration": "Al-Khaliq",
+   "english": "The Creator",
+   "explanation": "He brings things into being from nothing, by His knowledge and decree."
+  },
+  {
+   "number": 12,
+   "arabic": "ٱلْبَارِئُ",
+   "transliteration": "Al-Bari'",
+   "english": "The Originator",
+   "explanation": "He brings creation into existence free of flaw and in perfect balance."
+  },
+  {
+   "number": 13,
+   "arabic": "ٱلْمُصَوِّرُ",
+   "transliteration": "Al-Musawwir",
+   "english": "The Fashioner",
+   "explanation": "He gives every creature its unique form and appearance."
+  },
+  {
+   "number": 14,
+   "arabic": "ٱلْغَفَّارُ",
+   "transliteration": "Al-Ghaffar",
+   "english": "The Ever-Forgiving",
+   "explanation": "He forgives again and again, however often His servants return to Him."
+  },
+  {
+   "number": 15,
+   "arabic": "ٱلْقَهَّارُ",
+   "transliteration": "Al-Qahhar",
+   "english": "The Subduer",
+   "explanation": "He prevails over all things, and everything submits to His power."
+  },
+  {
+   "number": 16,
+   "arabic": "ٱلْوَهَّابُ",
+   "transliteration": "Al-Wahhab",
+   "english": "The Bestower",
+   "explanation": "He gives freely and endlessly, without being asked and without any return."
+  },
+  {
+   "number": 17,
+   "arabic": "ٱلرَّزَّاقُ",
+   "transliteration": "Ar-Razzaq",
+   "english": "The Provider",
+   "explanation": "He provides for every living being, in body and in soul."
+  },
+  {
+   "number": 18,
+   "arabic": "ٱلْفَتَّاحُ",
+   "transliteration": "Al-Fattah",
+   "english": "The Opener",
+   "explanation": "He opens the doors of mercy and provision, and judges between people with truth."
+  },
+  {
+   "number": 19,
+   "arabic": "ٱلْعَلِيمُ",
+   "transliteration": "Al-Alim",
+   "english": "The All-Knowing",
+   "explanation": "His knowledge covers everything, hidden and open, past, present and future."
+  },
+  {
+   "number": 20,
+   "arabic": "ٱلْقَابِضُ",
+   "transliteration": "Al-Qabid",
+   "english": "The Withholder",
+   "explanation": "In His wisdom He holds back provision and constricts hearts as He wills."
+  },
+  {
+   "number": 21,
+   "arabic": "ٱلْبَاسِطُ",
+   "transliteration": "Al-Basit",
+   "english": "The Extender",
+   "explanation": "He expands provision and opens hearts generously for whom He wills."
+  },
+  {
+   "number": 22,
+   "arabic": "ٱلْخَافِضُ",
+   "transliteration": "Al-Khafid",
+   "english": "The Abaser",
+   "explanation": "He lowers the arrogant and the oppressor in His perfect justice."
+  },
+  {
+   "number": 23,
+   "arabic": "ٱلرَّافِعُ",
+   "transliteration": "Ar-Rafi'",
+   "english": "The Exalter",
+   "explanation": "He raises in rank the believers and those given knowledge."
+  },
+  {
+   "number": 24,
+   "arabic": "ٱلْمُعِزُّ",
+   "transliteration": "Al-Mu'izz",
+   "english": "The Giver of Honour",
+   "explanation": "True honour comes only from Him, and He grants it to whom He wills."
+  },
+  {
+   "number": 25,
+   "arabic": "ٱلْمُذِلُّ",
+   "transliteration": "Al-Mudhill",
+   "english": "The Giver of Dishonour",
+   "explanation": "He humbles whom He wills, and none can honour whom He has disgraced."
+  },
+  {
+   "number": 26,
+   "arabic": "ٱلسَّمِيعُ",
+   "transliteration": "As-Sami'",
+   "english": "The All-Hearing",
+   "explanation": "He hears every voice and every whispered prayer, in every language at once."
+  },
+  {
+   "number": 27,
+   "arabic": "ٱلْبَصِيرُ",
+   "transliteration": "Al-Basir",
+   "english": "The All-Seeing",
+   "explanation": "He sees all things, however small or hidden they may be."
+  },
+  {
+   "number": 28,
+   "arabic": "ٱلْحَكَمُ",
+   "transliteration": "Al-Hakam",
+   "english": "The Judge",
+   "explanation": "He is the final judge, and His judgement is always just."
+  },
+  {
+   "number": 29,
+   "arabic": "ٱلْعَدْلُ",
+   "transliteration": "Al-Adl",
+   "english": "The Utterly Just",
+   "explanation": "He is perfectly just, and never wrongs anyone by even an atom's weight."
+  },
+  {
+   "number": 30,
+   "arabic": "ٱللَّطِيفُ",
+   "transliteration": "Al-Latif",
+   "english": "The Subtle, the Kind",
+   "explanation": "He knows the finest details and is gentle to His servants in ways they may not see."
+  },
+  {
+   "number": 31,
+   "arabic": "ٱلْخَبِيرُ",
+   "transliteration": "Al-Khabir",
+   "english": "The All-Aware",
+   "explanation": "He is aware of the inner reality of all things, and nothing is hidden from Him."
+  },
+  {
+   "number": 32,
+   "arabic": "ٱلْحَلِيمُ",
+   "transliteration": "Al-Halim",
+   "english": "The Forbearing",
+   "explanation": "He does not hasten to punish, giving His servants time to repent."
+  },
+  {
+   "number": 33,
+   "arabic": "ٱلْعَظِيمُ",
+   "transliteration": "Al-Azim",
+   "english": "The Magnificent",
+   "explanation": "His greatness is beyond the reach of minds and the limits of description."
+  },
+  {
+   "number": 34,
+   "arabic": "ٱلْغَفُورُ",
+   "transliteration": "Al-Ghafur",
+   "english": "The All-Forgiving",
+   "explanation": "He covers sins and forgives them completely, however great they are."
+  },
+  {
+   "number": 35,
+   "arabic": "ٱلشَّكُورُ",
+   "transliteration": "Ash-Shakur",
+   "english": "The Appreciative",
+   "explanation": "He rewards even small good deeds with a great reward."
+  },
+  {
+   "number": 36,
+   "arabic": "ٱلْعَلِيُّ",
+   "transliteration": "Al-Aliyy",
+   "english": "The Most High",
+   "explanation": "He is above all things in His essence, His rank and His power."
+  },
+  {
+   "number": 37,
+   "arabic": "ٱلْكَبِيرُ",
+   "transliteration": "Al-Kabir",
+   "english": "The Most Great",
+   "explanation": "He is greater than everything, and everything is small before Him."
+  },
+  {
+   "number": 38,
+   "arabic": "ٱلْحَفِيظُ",
+   "transliteration": "Al-Hafiz",
+   "english": "The Preserver",
+   "explanation": "He guards His creation and keeps a record of every deed."
+  },
+  {
+   "number": 39,
+   "arabic": "ٱلْمُقِيتُ",
+   "transliteration": "Al-Muqit",
+   "english": "The Nourisher",
+   "explanation": "He gives every creature the sustenance and strength it needs."
+  },
+  {
+   "number": 40,
+   "arabic": "ٱلْحَسِيبُ",
+   "transliteration": "Al-Hasib",
+   "english": "The Reckoner",
+   "explanation": "He takes account of all deeds, and He is sufficient for those who rely on Him."
+  },
+  {
+   "number": 41,
+   "arabic": "ٱلْجَلِيلُ",
+   "transliteration": "Al-Jalil",
+   "english": "The Majestic",
+   "explanation": "He possesses every quality of majesty and grandeur."
+  },
+  {
+   "number": 42,
+   "arabic": "ٱلْكَرِيمُ",
+   "transliteration": "Al-Karim",
+   "english": "The Most Generous",
+   "explanation": "He gives abundantly, forgives freely and honours those who turn to Him."
+  },
+  {
+   "number": 43,
+   "arabic": "ٱلرَّقِيبُ",
+   "transliteration": "Ar-Raqib",
+   "english": "The Watchful",
+   "explanation": "He watches over every soul and every action, at every moment."
+  },
+  {
+   "number": 44,
+   "arabic": "ٱلْمُجِيبُ",
+   "transliteration": "Al-Mujib",
+   "english": "The Responsive",
+   "explanation": "He answers the call of those who pray to Him."
+  },
+  {
+   "number": 45,
+   "arabic": "ٱلْوَاسِعُ",
+   "transliteration": "Al-Wasi'",
+   "english": "The All-Encompassing",
+   "explanation": "His knowledge, mercy and generosity have no limit."
+  },
+  {
+   "number": 46,
+   "arabic": "ٱلْحَكِيمُ",
+   "transliteration": "Al-Hakim",
+   "english": "The All-Wise",
+   "explanation": "Everything He creates and decrees has perfect wisdom behind it."
+  },
+  {
+   "number": 47,
+   "arabic": "ٱلْوَدُودُ",
+   "transliteration": "Al-Wadud",
+   "english": "The Loving",
+   "explanation": "He loves His righteous servants and places love for them in hearts."
+  },
+  {
+   "number": 48,
+   "arabic": "ٱلْمَجِيدُ",
+   "transliteration": "Al-Majid",
+   "english": "The Glorious",
+   "explanation": "His glory is perfect, and His generosity is vast."
+  },
+  {
+   "number": 49,
+   "arabic": "ٱلْبَاعِثُ",
+   "transliteration": "Al-Ba'ith",
+   "english": "The Resurrector",
+   "explanation": "He will raise all people from their graves on the Day of Judgement."
+  },
+  {
+   "number": 50,
+   "arabic": "ٱلشَّهِيدُ",
+   "transliteration": "Ash-Shahid",
+   "english": "The Witness",
+   "explanation": "He witnesses all things, and nothing happens out of His sight."
+  },
+  {
+   "number": 51,
+   "arabic": "ٱلْحَقُّ",
+   "transliteration": "Al-Haqq",
+   "english": "The Truth",
+   "explanation": "He is the absolute Truth, and His existence and promise are certain."
+  },
+  {
+   "number": 52,
+   "arabic": "ٱلْوَكِيلُ",
+   "transliteration": "Al-Wakil",
+   "english": "The Trustee",
+   "explanation": "He is the best to rely on, and He takes care of all the affairs of those who trust Him."
+  },
+  {
+   "number": 53,
+   "arabic": "ٱلْقَوِيُّ",
+   "transliteration": "Al-Qawiyy",
+   "english": "The All-Strong",
+   "explanation": "His strength is perfect and never weakens or tires."
+  },
+  {
+   "number": 54,
+   "arabic": "ٱلْمَتِينُ",
+   "transliteration": "Al-Matin",
+   "english": "The Firm",
+   "explanation": "His power is firm and unshakeable, needing no help from anyone."
+  },
+  {
+   "number": 55,
+   "arabic": "ٱلْوَلِيُّ",
+   "transliteration": "Al-Waliyy",
+   "english": "The Protecting Friend",
+   "explanation": "He is the ally and helper of the believers, bringing them out of darkness into light."
+  },
+  {
+   "number": 56,
+   "arabic": "ٱلْحَمِيدُ",
+   "transliteration": "Al-Hamid",
+   "english": "The Praiseworthy",
+   "explanation": "All praise belongs to Him, whether or not anyone praises Him."
+  },
+  {
+   "number": 57,
+   "arabic": "ٱلْمُحْصِي",
+   "transliteration": "Al-Muhsi",
+   "english": "The Accounter",
+   "explanation": "He counts and knows the number of all things, down to every breath and leaf."
+  },
+  {
+   "number": 58,
+   "arabic": "ٱلْمُبْدِئُ",
+   "transliteration": "Al-Mubdi'",
+   "english": "The Initiator",
+   "explanation": "He began creation the first time, without any model before it."
+  },
+  {
+   "number": 59,
+   "arabic": "ٱلْمُعِيدُ",
+   "transliteration": "Al-Mu'id",
+   "english": "The Restorer",
+   "explanation": "He will bring creation back to life after death."
+  },
+  {
+   "number": 60,
+   "arabic": "ٱلْمُحْيِي",
+   "transliteration": "Al-Muhyi",
+   "english": "The Giver of Life",
+   "explanation": "He gives life to the body, and gives life to hearts with faith."
+  },
+  {
+   "number": 61,
+   "arabic": "ٱلْمُمِيتُ",
+   "transliteration": "Al-Mumit",
+   "english": "The Bringer of Death",
+   "explanation": "He decrees death for every living being at its appointed time."
+  },
+  {
+   "number": 62,
+   "arabic": "ٱلْحَيُّ",
+   "transliteration": "Al-Hayy",
+   "english": "The Ever-Living",
+   "explanation": "His life is perfect and eternal, with no beginning and no end."
+  },
+  {
+   "number": 63,
+   "arabic": "ٱلْقَيُّومُ",
+   "transliteration": "Al-Qayyum",
+   "english": "The Self-Subsisting",
+   "explanation": "He needs nothing, and everything depends on Him to exist."
+  },
+  {
+   "number": 64,
+   "arabic": "ٱلْوَاجِدُ",
+   "transliteration": "Al-Wajid",
+   "english": "The Finder",
+   "explanation": "He lacks nothing and finds whatever He wills, whenever He wills."
+  },
+  {
+   "number": 65,
+   "arabic": "ٱلْمَاجِدُ",
+   "transliteration": "Al-Majid",
+   "english": "The Noble",
+   "explanation": "He is noble and honoured, with perfect glory and generosity."
+  },
+  {
+   "number": 66,
+   "arabic": "ٱلْوَاحِدُ",
+   "transliteration": "Al-Wahid",
+   "english": "The One",
+   "explanation": "He is one in His essence, His attributes and His actions."
+  },
+  {
+   "number": 67,
+   "arabic": "ٱلْأَحَدُ",
+   "transliteration": "Al-Ahad",
+   "english": "The Unique",
+   "explanation": "He is uniquely One, with no partner, equal or likeness."
+  },
+  {
+   "number": 68,
+   "arabic": "ٱلصَّمَدُ",
+   "transliteration": "As-Samad",
+   "english": "The Eternal Refuge",
+   "explanation": "All creation turns to Him in need, while He needs no one."
+  },
+  {
+   "number": 69,
+   "arabic": "ٱلْقَادِرُ",
+   "transliteration": "Al-Qadir",
+   "english": "The All-Capable",
+   "explanation": "He is able to do anything He wills."
+  },
+  {
+   "number": 70,
+   "arabic": "ٱلْمُقْتَدِرُ",
+   "transliteration": "Al-Muqtadir",
+   "english": "The All-Powerful",
+   "explanation": "His power is complete over everything, and nothing can stop Him."
+  },
+  {
+   "number": 71,
+   "arabic": "ٱلْمُقَدِّمُ",
+   "transliteration": "Al-Muqaddim",
+   "english": "The Expediter",
+   "explanation": "He brings forward whom and what He wills, in His wisdom."
+  },
+  {
+   "number": 72,
+   "arabic": "ٱلْمُؤَخِّرُ",
+   "transliteration": "Al-Mu'akhkhir",
+   "english": "The Delayer",
+   "explanation": "He holds back whom and what He wills, in His wisdom."
+  },
+  {
+   "number": 73,
+   "arabic": "ٱلْأَوَّلُ",
+   "transliteration": "Al-Awwal",
+   "english": "The First",
+   "explanation": "He existed before everything, with no beginning."
+  },
+  {
+   "number": 74,
+   "arabic": "ٱلْآخِرُ",
+   "transliteration": "Al-Akhir",
+   "english": "The Last",
+   "explanation": "He remains after everything has perished, with no end."
+  },
+  {
+   "number": 75,
+   "arabic": "ٱلظَّاهِرُ",
+   "transliteration": "Az-Zahir",
+   "english": "The Manifest",
+   "explanation": "His existence is evident in everything, and nothing is above Him."
+  },
+  {
+   "number": 76,
+   "arabic": "ٱلْبَاطِنُ",
+   "transliteration": "Al-Batin",
+   "english": "The Hidden",
+   "explanation": "He is hidden from sight, and nothing is closer than Him."
+  },
+  {
+   "number": 77,
+   "arabic": "ٱلْوَالِي",
+   "transliteration": "Al-Wali",
+   "english": "The Governor",
+   "explanation": "He governs and manages all the affairs of creation."
+  },
+  {
+   "number": 78,
+   "arabic": "ٱلْمُتَعَالِي",
+   "transliteration": "Al-Muta'ali",
+   "english": "The Most Exalted",
+   "explanation": "He is exalted far above the attributes of His creation."
+  },
+  {
+   "number": 79,
+   "arabic": "ٱلْبَرُّ",
+   "transliteration": "Al-Barr",
+   "english": "The Source of Goodness",
+   "explanation": "He is kind and good to His servants, and His goodness is everywhere."
+  },
+  {
+   "number": 80,
+   "arabic": "ٱلتَّوَّابُ",
+   "transliteration": "At-Tawwab",
+   "english": "The Accepter of Repentance",
+   "explanation": "He guides His servants to repent and accepts their repentance again and again."
+  },
+  {
+   "number": 81,
+   "arabic": "ٱلْمُنْتَقِمُ",
+   "transliteration": "Al-Muntaqim",
+   "english": "The Avenger",
+   "explanation": "He brings justice against those who persist in wrongdoing."
+  },
+  {
+   "number": 82,
+   "arabic": "ٱلْعَفُوُّ",
+   "transliteration": "Al-'Afuww",
+   "english": "The Pardoner",
+   "explanation": "He erases sins completely, as if they had never been."
+  },
+  {
+   "number": 83,
+   "arabic": "ٱلرَّءُوفُ",
+   "transliteration": "Ar-Ra'uf",
+   "english": "The Most Kind",
+   "explanation": "His compassion is gentle and tender towards His servants."
+  },
+  {
+   "number": 84,
+   "arabic": "مَالِكُ ٱلْمُلْكِ",
+   "transliteration": "Malik-ul-Mulk",
+   "english": "Owner of All Sovereignty",
+   "explanation": "All dominion is His, and He gives and takes it from whom He wills."
+  },
+  {
+   "number": 85,
+   "arabic": "ذُو ٱلْجَلَالِ وَٱلْإِكْرَامِ",
+   "transliteration": "Dhul-Jalali wal-Ikram",
+   "english": "Lord of Majesty and Honour",
+   "explanation": "He is the possessor of all majesty, and the source of all honour and generosity."
+  },
+  {
+   "number": 86,
+   "arabic": "ٱلْمُقْسِطُ",
+   "transliteration": "Al-Muqsit",
+   "english": "The Equitable",
+   "explanation": "He acts with perfect fairness and gives everyone their due."
+  },
+  {
+   "number": 87,
+   "arabic": "ٱلْجَامِعُ",
+   "transliteration": "Al-Jami'",
+   "english": "The Gatherer",
+   "explanation": "He will gather all people together on the Day of Judgement."
+  },
+  {
+   "number": 88,
+   "arabic": "ٱلْغَنِيُّ",
+   "transliteration": "Al-Ghaniyy",
+   "english": "The Self-Sufficient",
+   "explanation": "He is rich beyond all need, and all creation needs Him."
+  },
+  {
+   "number": 89,
+   "arabic": "ٱلْمُغْنِي",
+   "transliteration": "Al-Mughni",
+   "english": "The Enricher",
+   "explanation": "He enriches whom He wills and frees them from need of others."
+  },
+  {
+   "number": 90,
+   "arabic": "ٱلْمَانِعُ",
+   "transliteration": "Al-Mani'",
+   "english": "The Preventer",
+   "explanation": "He withholds what He wills, protecting His servants from harm."
+  },
+  {
+   "number": 91,
+   "arabic": "ٱلضَّارُّ",
+   "transliteration": "Ad-Darr",
+   "english": "The Distresser",
+   "explanation": "No harm happens except by His decree, and in it there is wisdom."
+  },
+  {
+   "number": 92,
+   "arabic": "ٱلنَّافِعُ",
+   "transliteration": "An-Nafi'",
+   "english": "The Benefactor",
+   "explanation": "All benefit comes from Him alone."
+  },
+  {
+   "number": 93,
+   "arabic": "ٱلنُّورُ",
+   "transliteration": "An-Nur",
+   "english": "The Light",
+   "explanation": "He is the Light of the heavens and the earth, and He guides hearts with His light."
+  },
+  {
+   "number": 94,
+   "arabic": "ٱلْهَادِي",
+   "transliteration": "Al-Hadi",
+   "english": "The Guide",
+   "explanation": "He guides His servants to what benefits them, and to the straight path."
+  },
+  {
+   "number": 95,
+   "arabic": "ٱلْبَدِيعُ",
+   "transliteration": "Al-Badi'",
+   "english": "The Incomparable Originator",
+   "explanation": "He created the heavens and the earth with no model before them."
+  },
+  {
+   "number": 96,
+   "arabic": "ٱلْبَاقِي",
+   "transliteration": "Al-Baqi",
+   "english": "The Everlasting",
+   "explanation": "He remains forever, while everything else will perish."
+  },
+  {
+   "number": 97,
+   "arabic": "ٱلْوَارِثُ",
+   "transliteration": "Al-Warith",
+   "english": "The Inheritor",
+   "explanation": "He remains after all creation, and everything returns to Him."
+  },
+  {
+   "number": 98,
+   "arabic": "ٱلرَّشِيدُ",
+   "transliteration": "Ar-Rashid",
+   "english": "The Guide to the Right Path",
+   "explanation": "All His actions are rightly guided, and He leads to what is right."
+  },
+  {
+   "number": 99,
+   "arabic": "ٱلصَّبُورُ",
+   "transliteration": "As-Sabur",
+   "english": "The Most Patient",
+   "explanation": "He is patient with His servants and does not hasten to punish them."
+  }
+ ]
+}

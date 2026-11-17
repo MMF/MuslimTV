@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Shown for the instant before Compose draws: same color as the app, so no white flash. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/mtv_background" />
+    <item android:width="96dp" android:height="96dp" android:gravity="center" android:drawable="@drawable/ic_star" />
+</layer-list>

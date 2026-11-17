@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onb_welcome">أهلاً بك في مسلم تي في</string>
+    <string name="onb_welcome_body">القرآن والأذكار ومواقيت الصلاة لكل العائلة. ثلاث خطوات سريعة وتبدأ.</string>
+    <string name="onb_step">الخطوة %1$s من %2$s</string>
+    <string name="onb_language_title">اختر اللغة</string>
+    <string name="onb_language_body">يمكنك تغييرها لاحقًا من الإعدادات.</string>
+    <string name="onb_city_title">أين أنت؟</string>
+    <string name="onb_city_body">تُحسب مواقيت الصلاة على هذا التلفاز حسب مدينتك، دون الحاجة إلى تحديد الموقع.</string>
+    <string name="onb_method_title">طريقة حساب المواقيت</string>
+    <string name="onb_method_body">اختر الطريقة التي يعتمدها مسجدك. الطريقة الموصى بها تناسب %1$s.</string>
+    <string name="onb_method_note">وقت العصر: %1$s. يمكنك تغييره وضبط كل صلاة بالدقائق من الإعدادات.</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_next_prayer">الصلاة القادمة</string>
+    <string name="home_tomorrow">غدًا</string>
+    <string name="home_continue_reading">متابعة القراءة</string>
+    <string name="home_continue_listening">متابعة الاستماع</string>
+    <string name="home_start_reading">ابدأ القراءة</string>
+    <string name="home_continue_position">%1$s · الآية %2$s</string>
+    <string name="home_suggested_now">مقترح الآن</string>
+    <string name="home_azkar_open">افتح الأذكار</string>
+    <string name="home_ayah_of_day">آية اليوم</string>
+    <string name="home_ayah_ref">%1$s · %2$s</string>
+    <string name="home_no_city">اختر مدينتك لعرض مواقيت الصلاة.</string>
+    <string name="home_choose_city">اختيار المدينة</string>
+    <string name="ambient_next">%1$s الساعة %2$s · بعد %3$s</string>
+    <string name="reminder_kahf">الجمعة: سورة الكهف</string>
+    <string name="reminder_mulk">قبل النوم: سورة الملك</string>
+    <string name="ramadan_day">رمضان · اليوم %1$s</string>
+    <string name="iftar">الإفطار</string>
+    <string name="suhoor_ends">نهاية السحور</string>
+    <string name="khatmah_card">الختمة · اليوم %1$s من %2$s</string>
+    <string name="khatmah_pages">الصفحات %1$s–%2$s</string>
+</resources>

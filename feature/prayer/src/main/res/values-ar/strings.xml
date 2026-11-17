@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="prayer_title">مواقيت الصلاة</string>
+    <string name="prayer_subtitle">%1$s · %2$s</string>
+    <string name="prayer_next">القادمة: %1$s</string>
+    <string name="prayer_adjust">إعدادات الصلاة</string>
+    <string name="prayer_method_line">%1$s · العصر: %2$s</string>
+    <string name="alert_channel">مواقيت الصلاة</string>
+    <string name="alert_title">حان الآن موعد صلاة %1$s</string>
+    <string name="adhan_now">الأذان · %1$s</string>
+    <string name="adhan_stop">إيقاف الأذان</string>
+    <string name="iqamah_in">الإقامة بعد</string>
+    <string name="iqamah_now">حان وقت الإقامة</string>
+    <string name="open_after_prayer_azkar">أذكار بعد الصلاة</string>
+    <string name="close">إغلاق</string>
+    <string name="month_title">جدول الشهر</string>
+    <string name="month_prev">الشهر السابق</string>
+    <string name="month_next">الشهر التالي</string>
+    <string name="adhan_settings">إعدادات الأذان</string>
+    <string name="adhan_settings_hint">اختر ما يحدث عند كل صلاة.</string>
+    <string name="mode_adhan">أذان على الشاشة</string>
+    <string name="mode_notification">إشعار صامت</string>
+    <string name="mode_off">إيقاف</string>
+    <string name="muezzin">تسجيل الأذان</string>
+    <string name="muezzin_preview">استماع</string>
+    <string name="muezzin_stop">إيقاف</string>
+    <string name="iqamah_minutes">الإقامة بعد %1$s دقيقة</string>
+    <string name="iqamah_setting">العدّ التنازلي للإقامة</string>
+    <string name="start_on_boot">فتح مسلم تي في عند تشغيل التلفاز</string>
+    <string name="on">تشغيل</string>
+    <string name="off">إيقاف</string>
+    <string name="exact_alarm_warning">قد يتأخر الأذان دقائق على هذا التلفاز لأن التنبيهات الدقيقة غير مسموح بها للتطبيق.</string>
+    <string name="date_col">التاريخ</string>
+    <string name="test_adhan">تجربة الأذان</string>
+    <string name="test_adhan_hint">يُشغَّل الأذان بعد دقيقة لتتأكد من مستوى الصوت.</string>
+    <string name="test_adhan_scheduled">سيعمل بعد دقيقة. يمكنك فتح تطبيق آخر لتجربته.</string>
+    <string name="overlay_title">إظهار الأذان فوق التطبيقات الأخرى</string>
+    <string name="overlay_on">تظهر شاشة الأذان حتى أثناء مشاهدة شيء آخر.</string>
+    <string name="overlay_off">بدون هذا الإذن يُرفع الأذان صوتًا فقط، ولا تظهر شاشته إلا إذا كان مسلم تي في مفتوحًا. اضغط OK للسماح.</string>
+    <string name="overlay_manual">اسمح به من إعدادات التلفاز ‹ التطبيقات ‹ أذونات التطبيقات الخاصة ‹ العرض فوق التطبيقات الأخرى.</string>
+    <string name="reminder_channel">التذكيرات</string>
+    <string name="reminder_kahf_title">الجمعة: اقرأ سورة الكهف</string>
+    <string name="reminder_mulk_title">قبل النوم: اقرأ سورة الملك</string>
+    <string name="reminder_tap">افتحها في مسلم تي في</string>
+</resources>

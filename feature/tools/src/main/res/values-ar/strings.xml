@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tools_title">أدوات</string>
+    <string name="t_calendar">التقويم الهجري</string>
+    <string name="t_qibla">القبلة</string>
+    <string name="t_hadith">حديث اليوم</string>
+    <string name="t_nawawi">الأربعون النووية</string>
+    <string name="t_live">البث المباشر والإذاعة</string>
+    <string name="t_kids">ركن الأطفال</string>
+    <string name="t_hajj">الحج والعمرة</string>
+    <string name="offline_disabled">يحتاج إلى إنترنت. صِل التلفاز بالشبكة للمشاهدة أو الاستماع.</string>
+
+    <string name="cal_prev">الشهر السابق</string>
+    <string name="cal_next">الشهر التالي</string>
+    <string name="cal_today">اليوم</string>
+    <string name="cal_fast">صيام مستحب</string>
+    <string name="cal_no_fast">لا يُصام</string>
+    <string name="cal_ramadan">رمضان</string>
+    <string name="cal_occasions">في هذا الشهر</string>
+    <string name="cal_none">لا مناسبات خاصة هذا الشهر. يُستحب صيام الاثنين والخميس والأيام البيض (١٣–١٥).</string>
+    <string name="occ_new_year">رأس السنة الهجرية</string>
+    <string name="occ_ashura">يوم عاشوراء</string>
+    <string name="occ_ramadan">بداية رمضان</string>
+    <string name="occ_last_ten">العشر الأواخر من رمضان</string>
+    <string name="occ_eid_fitr">عيد الفطر</string>
+    <string name="occ_dhul_hijjah">العشر الأوائل من ذي الحجة</string>
+    <string name="occ_arafah">يوم عرفة</string>
+    <string name="occ_eid_adha">عيد الأضحى</string>
+    <string name="occ_tashreeq">أيام التشريق</string>
+
+    <string name="qibla_bearing">%1$s° من الشمال الحقيقي</string>
+    <string name="qibla_point">باتجاه %1$s</string>
+    <string name="qibla_distance">%1$s كم إلى الكعبة</string>
+    <string name="qibla_hint">لا يوجد في التلفاز بوصلة. استعن باتجاه معروف: تشرق الشمس من الشرق وتغرب في الغرب.</string>
+    <string name="qibla_from">من %1$s</string>
+
+    <string name="hadith_number">%1$s · %2$s</string>
+    <string name="hadith_open_nawawi">الأربعون النووية</string>
+    <string name="nawawi_count">الحديث %1$s من %2$s</string>
+
+    <string name="live_section">بث مباشر من الحرمين الشريفين</string>
+    <string name="radio_section">إذاعات القرآن</string>
+    <string name="live_error">تعذّر تشغيل البث، فقد يكون متوقفًا الآن.</string>
+    <string name="retry">إعادة المحاولة</string>
+
+    <string name="kids_wudu">الوضوء</string>
+    <string name="kids_prayer">الصلاة</string>
+    <string name="kids_duas">أدعية قصيرة</string>
+    <string name="step_of">الخطوة %1$s من %2$s</string>
+    <string name="next">التالي</string>
+
+    <string name="hajj_umrah">العمرة</string>
+    <string name="hajj_hajj">الحج</string>
+    <string name="hajj_duas">الأدعية</string>
+    <string name="guide_note">دليل مختصر. للتفاصيل والحالات الخاصة اسأل عالمًا موثوقًا.</string>
+
+    <string-array name="wudu_steps">
+        <item>انوِ الوضوء بقلبك وقل: «بسم الله».</item>
+        <item>اغسل كفّيك إلى الرسغين ثلاث مرات.</item>
+        <item>تمضمض ثلاث مرات.</item>
+        <item>استنشق الماء برفق ثم استنثره ثلاث مرات.</item>
+        <item>اغسل وجهك كاملًا ثلاث مرات.</item>
+        <item>اغسل يدك اليمنى إلى المرفق ثم اليسرى، ثلاثًا لكل منهما.</item>
+        <item>امسح رأسك بيديك المبلولتين من الأمام إلى الخلف ثم ارجع، مرة واحدة.</item>
+        <item>امسح أذنيك من الداخل والخلف مرة واحدة.</item>
+        <item>اغسل رجلك اليمنى إلى الكعبين ثم اليسرى، ثلاثًا لكل منهما.</item>
+        <item>قل دعاء ما بعد الوضوء: «أشهد أن لا إله إلا الله…».</item>
+    </string-array>
+    <string-array name="prayer_steps">
+        <item>توضأ واستقبل القبلة وانوِ الصلاة بقلبك.</item>
+        <item>ارفع يديك وقل: «الله أكبر».</item>
+        <item>اقرأ الفاتحة ثم سورة قصيرة.</item>
+        <item>اركع وقل: «سبحان ربي العظيم» ثلاثًا.</item>
+        <item>ارفع قائلًا: «سمع الله لمن حمده، ربنا ولك الحمد».</item>
+        <item>اسجد وقل: «سبحان ربي الأعلى» ثلاثًا.</item>
+        <item>اجلس وقل: «ربّ اغفر لي»، ثم اسجد السجدة الثانية.</item>
+        <item>قم للركعة التالية وكرّر ما سبق.</item>
+        <item>في الجلسة الأخيرة اقرأ التشهد والصلاة على النبي ﷺ.</item>
+        <item>التفت يمينًا ثم يسارًا قائلًا: «السلام عليكم ورحمة الله».</item>
+    </string-array>
+    <string-array name="umrah_steps">
+        <item>الإحرام: عند الميقات البس ملابس الإحرام وانوِ العمرة وابدأ التلبية.</item>
+        <item>الطواف: طُف حول الكعبة سبعة أشواط تبدأ وتنتهي عند الحجر الأسود، والكعبة عن يسارك.</item>
+        <item>صلِّ ركعتين خلف مقام إبراهيم إن تيسّر، أو في أي مكان من المسجد.</item>
+        <item>اشرب من ماء زمزم.</item>
+        <item>السعي: سبعة أشواط بين الصفا والمروة، تبدأ بالصفا وتنتهي بالمروة.</item>
+        <item>احلق رأسك أو قصّر (والمرأة تقصّ قدر أنملة). تمّت عمرتك.</item>
+    </string-array>
+    <string-array name="hajj_steps">
+        <item>الثامن من ذي الحجة: أحرم (للمتمتع من مكانه في مكة) واتجه إلى منى.</item>
+        <item>التاسع من ذي الحجة: قف بعرفة من بعد الزوال إلى الغروب، في ذكر ودعاء.</item>
+        <item>ليلة العاشر: انزل مزدلفة، وصلِّ بها المغرب والعشاء، وبِتْ فيها.</item>
+        <item>العاشر من ذي الحجة: ارمِ جمرة العقبة بسبع حصيات، واذبح الهدي، واحلق أو قصّر.</item>
+        <item>طُف طواف الإفاضة واسعَ سعي الحج.</item>
+        <item>من الحادي عشر إلى الثالث عشر: بِتْ في منى وارمِ الجمرات الثلاث كل يوم بعد الزوال (ويجوز التعجل بعد الثاني عشر).</item>
+        <item>قبل مغادرة مكة طُف طواف الوداع.</item>
+    </string-array>
+</resources>

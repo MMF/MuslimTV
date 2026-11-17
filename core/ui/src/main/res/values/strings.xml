@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Muslim TV</string>
+
+    <string name="prayer_fajr">Fajr</string>
+    <string name="prayer_sunrise">Sunrise</string>
+    <string name="prayer_dhuhr">Dhuhr</string>
+    <string name="prayer_jumuah">Jumu\'ah</string>
+    <string name="prayer_asr">Asr</string>
+    <string name="prayer_maghrib">Maghrib</string>
+    <string name="prayer_isha">Isha</string>
+
+    <string name="method_umm_al_qura">Umm al-Qura, Makkah</string>
+    <string name="method_mwl">Muslim World League</string>
+    <string name="method_egyptian">Egyptian General Authority</string>
+    <string name="method_karachi">University of Islamic Sciences, Karachi</string>
+    <string name="method_isna">Islamic Society of North America</string>
+    <string name="method_dubai">Dubai</string>
+    <string name="method_kuwait">Kuwait</string>
+    <string name="method_qatar">Qatar</string>
+    <string name="method_singapore">Singapore, Malaysia, Indonesia</string>
+    <string name="method_turkey">Diyanet, Turkey</string>
+    <string name="method_moonsighting">Moonsighting Committee</string>
+
+    <string name="madhab_shafi">Standard (Shafi\'i, Maliki, Hanbali)</string>
+    <string name="madhab_hanafi">Hanafi</string>
+    <string name="highlat_auto">Automatic</string>
+    <string name="highlat_middle">Middle of the night</string>
+    <string name="highlat_seventh">Seventh of the night</string>
+    <string name="highlat_twilight">Twilight angle</string>
+
+    <string name="azkar_morning">Morning azkar</string>
+    <string name="azkar_evening">Evening azkar</string>
+    <string name="azkar_after_prayer">After-prayer azkar</string>
+    <string name="azkar_sleep">Before sleep</string>
+    <string name="azkar_waking">On waking up</string>
+    <string name="azkar_iftar">Iftar dua</string>
+    <string name="azkar_occasions">Duas for occasions</string>
+
+    <string-array name="hijri_months">
+        <item>Muharram</item>
+        <item>Safar</item>
+        <item>Rabi al-Awwal</item>
+        <item>Rabi al-Thani</item>
+        <item>Jumada al-Ula</item>
+        <item>Jumada al-Akhirah</item>
+        <item>Rajab</item>
+        <item>Sha\'ban</item>
+        <item>Ramadan</item>
+        <item>Shawwal</item>
+        <item>Dhu al-Qadah</item>
+        <item>Dhu al-Hijjah</item>
+    </string-array>
+    <string name="hijri_date_format">%1$s %2$s %3$s AH</string>
+
+    <string name="language_arabic">العربية</string>
+    <string name="language_english">English</string>
+
+    <string name="action_retry">Retry</string>
+    <string name="action_back_home">Back to Home</string>
+    <string name="action_continue">Continue</string>
+    <string name="action_back">Back</string>
+    <string name="action_exit">Exit</string>
+    <string name="action_stay">Stay</string>
+    <string name="action_search">Search</string>
+    <string name="action_voice_search">Voice search</string>
+
+    <string name="offline">Offline</string>
+    <string name="recommended">Recommended</string>
+    <string name="city_search_hint">Type a city name</string>
+    <string name="city_suggested">Suggested cities</string>
+    <string name="city_results">Results</string>
+    <string name="city_no_results">No city matches \"%1$s\". Try a shorter name or another spelling.</string>
+    <string name="city_clear_search">Clear search</string>
+    <string name="city_list_error">The city list could not be opened.</string>
+
+    <string name="exit_title">Exit Muslim TV?</string>
+    <string name="exit_message">You can come back any time from the TV home screen.</string>
+
+    <string name="countdown_in">in %1$s</string>
+    <string name="time_am">AM</string>
+    <string name="time_pm">PM</string>
+</resources>

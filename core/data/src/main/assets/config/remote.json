@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "note": "Bundled default. The app replaces this with the copy at REMOTE_CONFIG_URL when one is set and reachable.",
+  "live": [
+    { "id": "makkah", "nameEn": "Makkah · Al-Masjid al-Haram", "nameAr": "مكة · المسجد الحرام", "url": "https://win.holol.com/live/quran/playlist.m3u8", "video": true },
+    { "id": "madinah", "nameEn": "Madinah · Al-Masjid an-Nabawi", "nameAr": "المدينة · المسجد النبوي", "url": "https://win.holol.com/live/sunnah/playlist.m3u8", "video": true }
+  ],
+  "radio": [
+    { "id": "sa_quran", "nameEn": "Holy Quran Radio · Saudi Arabia", "nameAr": "إذاعة القرآن الكريم · السعودية", "url": "https://stream.radiojar.com/0tpy1h0kxtzuv", "video": false },
+    { "id": "khashia", "nameEn": "Calm recitations", "nameAr": "تلاوات خاشعة", "url": "https://backup.qurango.net/radio/salma", "video": false },
+    { "id": "mix", "nameEn": "Various reciters", "nameAr": "تلاوات متنوعة", "url": "https://backup.qurango.net/radio/mix", "video": false },
+    { "id": "mukhtasar", "nameEn": "Al-Mukhtasar tafsir", "nameAr": "المختصر في تفسير القرآن الكريم", "url": "https://backup.qurango.net/radio/mukhtasartafsir", "video": false },
+    { "id": "ruqyah", "nameEn": "Ruqyah", "nameAr": "الرقية الشرعية", "url": "https://backup.qurango.net/radio/roqiah", "video": false }
+  ]
+}

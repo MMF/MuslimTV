@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">مسلم تي في</string>
+
+    <string name="prayer_fajr">الفجر</string>
+    <string name="prayer_sunrise">الشروق</string>
+    <string name="prayer_dhuhr">الظهر</string>
+    <string name="prayer_jumuah">الجمعة</string>
+    <string name="prayer_asr">العصر</string>
+    <string name="prayer_maghrib">المغرب</string>
+    <string name="prayer_isha">العشاء</string>
+
+    <string name="method_umm_al_qura">أم القرى، مكة المكرمة</string>
+    <string name="method_mwl">رابطة العالم الإسلامي</string>
+    <string name="method_egyptian">الهيئة المصرية العامة للمساحة</string>
+    <string name="method_karachi">جامعة العلوم الإسلامية، كراتشي</string>
+    <string name="method_isna">الجمعية الإسلامية لأمريكا الشمالية</string>
+    <string name="method_dubai">دبي</string>
+    <string name="method_kuwait">الكويت</string>
+    <string name="method_qatar">قطر</string>
+    <string name="method_singapore">سنغافورة وماليزيا وإندونيسيا</string>
+    <string name="method_turkey">رئاسة الشؤون الدينية، تركيا</string>
+    <string name="method_moonsighting">لجنة رؤية الهلال</string>
+
+    <string name="madhab_shafi">الجمهور (الشافعي والمالكي والحنبلي)</string>
+    <string name="madhab_hanafi">الحنفي</string>
+    <string name="highlat_auto">تلقائي</string>
+    <string name="highlat_middle">منتصف الليل</string>
+    <string name="highlat_seventh">سُبع الليل</string>
+    <string name="highlat_twilight">زاوية الشفق</string>
+
+    <string name="azkar_morning">أذكار الصباح</string>
+    <string name="azkar_evening">أذكار المساء</string>
+    <string name="azkar_after_prayer">أذكار بعد الصلاة</string>
+    <string name="azkar_sleep">أذكار النوم</string>
+    <string name="azkar_waking">أذكار الاستيقاظ</string>
+    <string name="azkar_iftar">دعاء الإفطار</string>
+    <string name="azkar_occasions">أدعية المناسبات</string>
+
+    <string-array name="hijri_months">
+        <item>محرم</item>
+        <item>صفر</item>
+        <item>ربيع الأول</item>
+        <item>ربيع الآخر</item>
+        <item>جمادى الأولى</item>
+        <item>جمادى الآخرة</item>
+        <item>رجب</item>
+        <item>شعبان</item>
+        <item>رمضان</item>
+        <item>شوال</item>
+        <item>ذو القعدة</item>
+        <item>ذو الحجة</item>
+    </string-array>
+    <string name="hijri_date_format">%1$s %2$s %3$s هـ</string>
+
+    <string name="language_arabic">العربية</string>
+    <string name="language_english">English</string>
+
+    <string name="action_retry">إعادة المحاولة</string>
+    <string name="action_back_home">العودة للرئيسية</string>
+    <string name="action_continue">متابعة</string>
+    <string name="action_back">رجوع</string>
+    <string name="action_exit">خروج</string>
+    <string name="action_stay">البقاء</string>
+    <string name="action_search">بحث</string>
+    <string name="action_voice_search">بحث صوتي</string>
+
+    <string name="offline">غير متصل</string>
+    <string name="recommended">موصى به</string>
+    <string name="city_search_hint">اكتب اسم المدينة</string>
+    <string name="city_suggested">مدن مقترحة</string>
+    <string name="city_results">النتائج</string>
+    <string name="city_no_results">لا توجد مدينة باسم \"%1$s\". جرّب اسمًا أقصر أو كتابة أخرى.</string>
+    <string name="city_clear_search">مسح البحث</string>
+    <string name="city_list_error">تعذّر فتح قائمة المدن.</string>
+
+    <string name="exit_title">الخروج من مسلم تي في؟</string>
+    <string name="exit_message">يمكنك العودة في أي وقت من الشاشة الرئيسية للتلفاز.</string>
+
+    <string name="countdown_in">بعد %1$s</string>
+    <string name="time_am">ص</string>
+    <string name="time_pm">م</string>
+</resources>
