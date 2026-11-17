@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.muslimtv.android.application)
     alias(libs.plugins.muslimtv.android.compose)
@@ -18,10 +20,25 @@ android {
         localeFilters += listOf("en", "ar")
     }
 
+    // Upload key for Google Play, read from the git-ignored keystore.properties.
+    // Without that file (e.g. on CI or another machine) release falls back to the debug key.
+    val keystoreProps = rootProject.file("keystore.properties").takeIf { it.isFile }?.let { f ->
+        Properties().apply { f.inputStream().use { load(it) } }
+    }
+    signingConfigs {
+        if (keystoreProps != null) {
+            create("release") {
+                storeFile = file(keystoreProps.getProperty("storeFile"))
+                storePassword = keystoreProps.getProperty("storePassword")
+                keyAlias = keystoreProps.getProperty("keyAlias")
+                keyPassword = keystoreProps.getProperty("keyPassword")
+            }
+        }
+    }
+
     buildTypes {
         release {
-            // Local testing only: signed with the debug key until a release keystore exists.
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = signingConfigs.findByName("release") ?: signingConfigs.getByName("debug")
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
