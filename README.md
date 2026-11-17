@@ -6,7 +6,7 @@ works in **Arabic and English**, and keeps working **offline**.
 
 ![Home in Arabic](docs/screenshots/03-home-arabic.jpg)
 
-**[⬇ Download the APK](https://github.com/MMF/MuslimTV/raw/main/public/MuslimTV.apk)** · [Install guide](#install-on-your-tv) ·
+**[⬇ Download the APK](https://github.com/MMF/MuslimTV/raw/main/public/MuslimTV.apk)** · Downloader code **2206289** · [Install guide](#install-on-your-tv) ·
 [التثبيت بالعربية](#التثبيت-على-التلفاز) · [Wireless debugging](#install-from-a-computer-wireless-debugging)
 
 ---
@@ -64,6 +64,8 @@ The app file: [`public/MuslimTV.apk`](public/MuslimTV.apk). Its direct download 
 https://github.com/MMF/MuslimTV/raw/main/public/MuslimTV.apk
 ```
 
+**Downloader code: `2206289`** (AFTVnews short link to the same file, made for typing with a remote).
+
 ### Option 1: with the Downloader app (no computer needed)
 
 1. **Install Downloader.** On the TV open the Google Play Store, search for **Downloader**
@@ -76,9 +78,9 @@ https://github.com/MMF/MuslimTV/raw/main/public/MuslimTV.apk
      and turn on **Downloader**.
    - If you can't find it, open Downloader and try step 3; the TV will offer a *Settings* button
      that leads straight to the right switch.
-3. **Download.** Open Downloader, select the address box, type the download link above and press
-   **Go**. Tip: typing a long link with the remote is slow; make a short link first (for example
-   with a URL shortener) and type that instead.
+3. **Download.** Open Downloader, select the address box, type the code **`2206289`** and press
+   **Go**. The code is an AFTVnews short link to the APK above, so there is no long link to type.
+   (Typing the full download link also works.)
 4. **Install.** When the download finishes, choose **Install**, then **Open**. Afterwards you can
    delete the downloaded file from Downloader to save space.
 5. The app appears in the TV's app list as **Muslim TV**. Add it to your favourites to keep it on
@@ -173,8 +175,8 @@ When you are done, you can turn wireless debugging off again in Developer option
      وفعّل **Downloader**.
    - **Android TV:** الإعدادات ← تفضيلات الجهاز ← الأمان والقيود ← مصادر غير معروفة،
      وفعّل **Downloader**.
-3. افتح Downloader واكتب رابط التحميل الموجود أعلاه ثم اضغط **Go**
-   (يُفضّل اختصار الرابط أولًا لتسهيل كتابته بالريموت).
+3. افتح Downloader، واكتب في خانة العنوان الرمز **`2206289`** ثم اضغط **Go**.
+   الرمز رابط مختصر من AFTVnews يؤدي إلى ملف التطبيق مباشرة (ويمكن أيضًا كتابة رابط التحميل الكامل).
 4. بعد انتهاء التحميل اختر **تثبيت** ثم **فتح**. يظهر التطبيق باسم **Muslim TV**.
 
 **للتحديث:** كرّر الخطوتين 3 و4 بالرابط نفسه، وتبقى إعداداتك وعلاماتك وختمتك كما هي.
