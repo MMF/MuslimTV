@@ -7,4 +7,6 @@
     <string name="nav_prayer">الصلاة</string>
     <string name="nav_tools">أدوات</string>
     <string name="nav_settings">الإعدادات</string>
+    <string name="rail_pause_recitation">إيقاف التلاوة مؤقتًا</string>
+    <string name="rail_resume_recitation">استئناف التلاوة</string>
 </resources>

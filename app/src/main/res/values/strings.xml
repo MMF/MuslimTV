@@ -7,4 +7,6 @@
     <string name="nav_prayer">Prayer</string>
     <string name="nav_tools">Tools</string>
     <string name="nav_settings">Settings</string>
+    <string name="rail_pause_recitation">Pause recitation</string>
+    <string name="rail_resume_recitation">Resume recitation</string>
 </resources>

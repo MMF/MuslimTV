@@ -123,4 +123,7 @@
     <string name="kh_finished">Khatmah complete. May Allah accept it.</string>
     <string name="kh_stop_confirm">Stop this khatmah? Its progress will be cleared.</string>
     <string name="kh_keep">Keep it</string>
+    <string name="ctl_resume">Resume</string>
+    <string name="ctl_stop">Stop</string>
+    <string name="reader_controls_hint">Press OK on an ayah to pause or stop</string>
 </resources>

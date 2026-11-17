@@ -72,6 +72,9 @@ fun NavRail(
     /** When set, a small offline indicator sits at the bottom of the rail on every section. */
     offlineLabel: String? = null,
     header: @Composable () -> Unit = {},
+    /** Optional entry above the sections (e.g. pause the recitation), reachable with Up. */
+    action: RailItem? = null,
+    onAction: () -> Unit = {},
 ) {
     var hasFocus by remember { mutableStateOf(false) }
     val width by animateDpAsState(
@@ -103,10 +106,14 @@ fun NavRail(
                 }
                 .railFocusRules(selectedRequester, exitTarget)
                 .selectableGroup(),
-            verticalArrangement = Arrangement.spacedBy(10.dp),
+            verticalArrangement = Arrangement.spacedBy(6.dp),
         ) {
             header()
             Spacer(Modifier.height(12.dp))
+            if (action != null) {
+                RailEntry(item = action, selected = false, expanded = hasFocus, onClick = onAction, modifier = Modifier)
+                Box(Modifier.padding(horizontal = 14.dp).fillMaxWidth().height(1.dp).background(c.onBackgroundMuted.copy(alpha = 0.25f)))
+            }
             items.forEach { item ->
                 val selected = item.key == selectedKey
                 RailEntry(
@@ -155,8 +162,10 @@ private fun RailEntry(item: RailItem, selected: Boolean, expanded: Boolean, onCl
         ),
         glow = SelectableSurfaceDefaults.glow(focusedGlow = Glow(c.gold.copy(alpha = 0.35f), 10.dp)),
     ) {
+        // Fixed height: Arabic labels are taller than the icon, and when the rail expanded they
+        // grew every item until the last one (Settings) was pushed off the bottom.
         Row(
-            modifier = Modifier.padding(horizontal = 14.dp, vertical = 12.dp),
+            modifier = Modifier.height(52.dp).padding(horizontal = 14.dp),
             verticalAlignment = Alignment.CenterVertically,
         ) {
             Icon(item.icon, contentDescription = item.label, modifier = Modifier.size(32.dp))

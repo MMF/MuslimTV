@@ -12,6 +12,8 @@ import androidx.compose.material.icons.rounded.Bookmark
 import androidx.compose.material.icons.rounded.BookmarkBorder
 import androidx.compose.material.icons.rounded.Fullscreen
 import androidx.compose.material.icons.rounded.PlayArrow
+import androidx.compose.material.icons.rounded.Stop
+import androidx.compose.material.icons.rounded.Pause
 import androidx.compose.material.icons.rounded.Psychology
 import androidx.compose.material.icons.rounded.Translate
 import androidx.compose.runtime.Composable
@@ -24,6 +26,7 @@ import androidx.compose.ui.input.key.Key
 import androidx.compose.ui.input.key.KeyEventType
 import androidx.compose.ui.input.key.key
 import androidx.compose.ui.input.key.onKeyEvent
+import androidx.compose.ui.input.key.onPreviewKeyEvent
 import androidx.compose.ui.input.key.type
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextDirection
@@ -46,6 +49,9 @@ internal fun AyahMenu(
     bookmarked: Boolean,
     translationShown: Boolean,
     isPlaying: Boolean,
+    playerActive: Boolean,
+    onTogglePause: () -> Unit,
+    onStop: () -> Unit,
     onPlay: () -> Unit,
     onBookmark: () -> Unit,
     onMemorize: () -> Unit,
@@ -57,8 +63,19 @@ internal fun AyahMenu(
     val first = remember { FocusRequester() }
     DialogPanel(onDismiss) {
         Text(title, style = MtvTheme.type.title)
-        ListRow(stringResource(R.string.menu_play_here), onPlay, Modifier.focusRequester(first), icon = Icons.Rounded.PlayArrow, showChevron = false)
-        if (isPlaying) ListRow(stringResource(R.string.ctl_full_screen), onOpenPlayer, icon = Icons.Rounded.Fullscreen, showChevron = false)
+        // While a recitation is loaded, pause and stop come first so they are one press away.
+        if (playerActive) {
+            ListRow(
+                stringResource(if (isPlaying) R.string.ctl_pause else R.string.ctl_resume),
+                onTogglePause,
+                Modifier.focusRequester(first),
+                icon = if (isPlaying) Icons.Rounded.Pause else Icons.Rounded.PlayArrow,
+                showChevron = false,
+            )
+            ListRow(stringResource(R.string.ctl_stop), onStop, icon = Icons.Rounded.Stop, showChevron = false)
+        }
+        ListRow(stringResource(R.string.menu_play_here), onPlay, if (playerActive) Modifier else Modifier.focusRequester(first), icon = Icons.Rounded.PlayArrow, showChevron = false)
+        if (playerActive) ListRow(stringResource(R.string.ctl_full_screen), onOpenPlayer, icon = Icons.Rounded.Fullscreen, showChevron = false)
         ListRow(
             stringResource(if (bookmarked) R.string.menu_remove_bookmark else R.string.menu_bookmark),
             onBookmark,
@@ -81,10 +98,9 @@ internal fun AyahMenu(
 internal fun TafsirDialog(title: String, text: String, onClose: () -> Unit) {
     val scroll = rememberScrollState()
     val scope = rememberCoroutineScope()
-    val body = remember { FocusRequester() }
+    val close = remember { FocusRequester() }
     DialogPanel(onClose, Modifier.heightIn(max = 460.dp)) {
         Text(title, style = MtvTheme.type.title)
-        // The text area itself takes focus, and Up/Down scroll it.
         Text(
             text,
             style = MtvTheme.type.body.copy(fontFamily = NaskhFamily, textDirection = TextDirection.Rtl),
@@ -92,21 +108,25 @@ internal fun TafsirDialog(title: String, text: String, onClose: () -> Unit) {
             modifier = Modifier
                 .fillMaxWidth()
                 .heightIn(max = 300.dp)
-                .focusRequester(body)
-                .onKeyEvent { e ->
-                    if (e.type != KeyEventType.KeyDown) return@onKeyEvent false
-                    when (e.key) {
-                        Key.DirectionDown -> { scope.launch { scroll.animateScrollBy(160f) }; scroll.canScrollForward }
-                        Key.DirectionUp -> { scope.launch { scroll.animateScrollBy(-160f) }; scroll.canScrollBackward }
-                        else -> false
-                    }
-                }
-                .focusable()
                 .verticalScroll(scroll),
         )
-        MtvButton(stringResource(R.string.close), onClose)
+        // Close holds focus so one OK closes; Up/Down on it scroll the text above.
+        MtvButton(
+            stringResource(R.string.close),
+            onClose,
+            Modifier
+                .focusRequester(close)
+                .onPreviewKeyEvent { e ->
+                    if (e.type != KeyEventType.KeyDown) return@onPreviewKeyEvent false
+                    when (e.key) {
+                        Key.DirectionDown -> { scope.launch { scroll.animateScrollBy(160f) }; true }
+                        Key.DirectionUp -> { scope.launch { scroll.animateScrollBy(-160f) }; true }
+                        else -> false
+                    }
+                },
+        )
     }
-    DialogInitialFocus(body)
+    DialogInitialFocus(close)
 }
 
 @Composable

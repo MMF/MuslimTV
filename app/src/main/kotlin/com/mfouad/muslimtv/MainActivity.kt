@@ -40,12 +40,16 @@ class MainActivity : AppCompatActivity() {
                 val onboardingDone by viewModel.onboardingDone.collectAsStateWithLifecycle()
                 val online by viewModel.online.collectAsStateWithLifecycle()
                 val idle by viewModel.idle.collectAsStateWithLifecycle()
+                val playback by viewModel.playback.collectAsStateWithLifecycle()
                 onboardingDone?.let { done ->
                     MuslimTvApp(
                         onboardingDone = done,
                         online = online,
                         pendingOpen = pendingOpen,
                         idle = idle,
+                        recitationActive = playback.isActive,
+                        recitationPlaying = playback.isPlaying,
+                        onTogglePlayback = viewModel::togglePlayback,
                         versionName = BuildConfig.VERSION_NAME,
                         onExit = ::finish,
                     )

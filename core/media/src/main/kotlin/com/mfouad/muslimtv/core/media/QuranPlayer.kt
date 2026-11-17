@@ -23,6 +23,8 @@ import com.mfouad.muslimtv.core.model.Reciter
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 import javax.inject.Singleton
+import kotlinx.coroutines.withContext
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
@@ -107,7 +109,12 @@ class QuranPlayer @Inject constructor(
     }
 
     /** Starts [surah] from [fromAyah] with [reciter]. Returns a problem instead of failing silently. */
-    suspend fun play(reciter: Reciter, surah: Int, fromAyah: Int = 1, toAyah: Int? = null): PlaybackProblem? {
+    // MediaController may only be used on the main thread; auto-continue and next/previous surah
+    // call these from the background application scope, which crashed the app at a surah's end.
+    suspend fun play(reciter: Reciter, surah: Int, fromAyah: Int = 1, toAyah: Int? = null): PlaybackProblem? =
+        withContext(Dispatchers.Main.immediate) { playOnMain(reciter, surah, fromAyah, toAyah) }
+
+    private suspend fun playOnMain(reciter: Reciter, surah: Int, fromAyah: Int, toAyah: Int?): PlaybackProblem? {
         val info = quran.surah(surah)
         val online = network.isOnline.first()
         if (!online && !local.isSurahDownloaded(reciter.id, surah, info.ayahCount)) {
@@ -144,7 +151,10 @@ class QuranPlayer @Inject constructor(
     }
 
     /** Plays several ayah ranges in a row (used for ruqyah); no basmala items, no auto-continue. */
-    suspend fun playRanges(reciter: Reciter, ranges: List<Pair<AyahRef, AyahRef>>): PlaybackProblem? {
+    suspend fun playRanges(reciter: Reciter, ranges: List<Pair<AyahRef, AyahRef>>): PlaybackProblem? =
+        withContext(Dispatchers.Main.immediate) { playRangesOnMain(reciter, ranges) }
+
+    private suspend fun playRangesOnMain(reciter: Reciter, ranges: List<Pair<AyahRef, AyahRef>>): PlaybackProblem? {
         val online = network.isOnline.first()
         val entries = ranges.flatMap { (from, to) -> (from.ayah..to.ayah).map { QueueEntry(AyahRef(from.surah, it)) } }
         if (!online && entries.any { !local.isDownloaded(reciter.id, it.ref) }) {

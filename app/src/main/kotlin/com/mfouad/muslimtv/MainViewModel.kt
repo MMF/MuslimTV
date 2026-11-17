@@ -20,7 +20,16 @@ import kotlinx.coroutines.flow.stateIn
 
 @OptIn(ExperimentalCoroutinesApi::class)
 @HiltViewModel
-class MainViewModel @Inject constructor(settings: SettingsRepository, network: NetworkMonitor) : ViewModel() {
+class MainViewModel @Inject constructor(
+    settings: SettingsRepository,
+    network: NetworkMonitor,
+    private val player: com.mfouad.muslimtv.core.media.QuranPlayer,
+) : ViewModel() {
+    /** Drives the rail's pause/resume entry while a recitation is loaded anywhere in the app. */
+    val playback: StateFlow<com.mfouad.muslimtv.core.media.PlayerState> = player.state
+
+    fun togglePlayback() = player.togglePlayPause()
+
     val online: StateFlow<Boolean> = network.isOnline.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), true)
 
     private val lastActivity = MutableStateFlow(System.currentTimeMillis())

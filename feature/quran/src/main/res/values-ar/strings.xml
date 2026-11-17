@@ -123,4 +123,7 @@
     <string name="kh_finished">تمت الختمة، تقبّل الله منك.</string>
     <string name="kh_stop_confirm">إيقاف هذه الختمة؟ سيُمسح تقدّمها.</string>
     <string name="kh_keep">الإبقاء عليها</string>
+    <string name="ctl_resume">استئناف</string>
+    <string name="ctl_stop">إيقاف</string>
+    <string name="reader_controls_hint">اضغط OK على آية للإيقاف المؤقت أو الإيقاف</string>
 </resources>

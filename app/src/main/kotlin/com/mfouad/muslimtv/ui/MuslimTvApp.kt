@@ -5,6 +5,9 @@ import androidx.compose.animation.fadeOut
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.Pause
+import androidx.compose.material.icons.rounded.PlayArrow
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
@@ -86,6 +89,9 @@ fun MuslimTvApp(
     pendingOpen: MutableStateFlow<String?>,
     idle: Boolean,
     onExit: () -> Unit,
+    recitationActive: Boolean = false,
+    recitationPlaying: Boolean = false,
+    onTogglePlayback: () -> Unit = {},
 ) {
     val nav = rememberNavController()
     val entry by nav.currentBackStackEntryAsState()
@@ -165,6 +171,14 @@ fun MuslimTvApp(
                         offlineLabel = if (online) null else stringResource(UiR.string.offline),
                         selectedKey = current.name,
                         selectedRequester = railRequester,
+                        action = if (recitationActive) {
+                            RailItem(
+                                "playback",
+                                stringResource(if (recitationPlaying) R.string.rail_pause_recitation else R.string.rail_resume_recitation),
+                                if (recitationPlaying) Icons.Rounded.Pause else Icons.Rounded.PlayArrow,
+                            )
+                        } else null,
+                        onAction = onTogglePlayback,
                         onFocusChanged = { railFocused = it },
                         onSelect = { item ->
                             val target = TopLevel.valueOf(item.key)

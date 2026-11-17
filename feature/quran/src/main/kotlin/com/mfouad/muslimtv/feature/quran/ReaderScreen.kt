@@ -162,6 +162,9 @@ fun ReaderEntry(
             bookmarked = ayah in state.bookmarked,
             translationShown = state.settings.showTranslation,
             isPlaying = player.isPlaying,
+            playerActive = player.isActive,
+            onTogglePause = { menuFor = null; viewModel.player.togglePlayPause(); focusAyah(ayah, center = false) },
+            onStop = { menuFor = null; viewModel.player.stop(); focusAyah(ayah, center = false) },
             onPlay = { menuFor = null; viewModel.playFrom(ayah) },
             onBookmark = { menuFor = null; viewModel.setBookmark(ayah, ayah !in state.bookmarked) },
             onMemorize = { menuFor = null; onMemorize(surah.number, ayah) },
@@ -326,5 +329,7 @@ private fun NowPlayingBar(reciter: String, surah: Int, ayah: Int?, playing: Bool
             color = MtvTheme.colors.onBackgroundMuted,
         )
         Box(Modifier.weight(1f))
+        // The bar itself is not focusable (it would steal Down from the ayahs); point to the menu.
+        Text(stringResource(R.string.reader_controls_hint), style = MtvTheme.type.caption, color = MtvTheme.colors.goldSoft, maxLines = 1)
     }
 }

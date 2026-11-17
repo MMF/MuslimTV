@@ -50,5 +50,9 @@ object QuranText {
     fun arabicNumber(n: Int): String = n.toString().map { arabicDigits[it - '0'] }.joinToString("")
 
     /** End-of-ayah ornament followed by the ayah number, which Quran fonts draw inside it. */
-    fun ayahMarker(n: Int): String = "۝" + arabicNumber(n)
+    /**
+     * Ayah number between ornate brackets: ﴿١٢﴾. The single End-of-Ayah sign (U+06DD) only wraps
+     * the digits on text engines that support it; on some TVs the number showed beside the circle.
+     */
+    fun ayahMarker(n: Int): String = "\uFD3F" + arabicNumber(n) + "\uFD3E"
 }
